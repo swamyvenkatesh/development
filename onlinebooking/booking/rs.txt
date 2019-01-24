@@ -1,0 +1,40 @@
+{{result.fareRPHS_List}}
+
+{{prices_data}}
+
+
+[u'1', u'2', u'3', u'4', u'5', u'6', u'7', u'8', u'9'], 
+
+
+for i in ll:
+	for j in lll:
+		i == j['fareRefer']:
+			pass
+[
+	{u'Turista': u'308.10', u'product_name': u'RENFE TICKET on DEPARTURE & RESERVATION', u'total_price': u'308.10', u'class': u'Turista', u'fareRefer': u'1'}, 
+
+		{u'product_name': u'RENFE TICKET on DEPARTURE & RESERVATION', u'total_price': u'365.10', u'Turista Plus': u'365.10', u'class': u'Turista Plus', u'fareRefer': u'2'}, 
+		{u'product_name': u'RENFE TICKET on DEPARTURE & RESERVATION', u'total_price': u'365.10', u'Turista Plus': u'365.10', u'class': u'Turista Plus', u'fareRefer': u'2'}, 
+
+		
+		], 
+
+
+
+	[
+	{u'product_name': u'RENFE TICKET on DEPARTURE & RESERVATION', u'total_price': u'506.10', u'Preferente': u'506.10', u'class': u'Preferente', u'fareRefer': u'3'},
+
+	 {u'Turista': u'218.10', u'product_name': u'RENFE TICKET on DEPARTURE & RESER  WEB', u'total_price': u'218.10', u'class': u'Turista', u'fareRefer': u'4'}, 
+
+	 {u'product_name': u'RENFE TICKET on DEPARTURE & RESER  WEB', u'total_price': u'203.10', u'Turista Plus': u'203.10', u'class': u'Turista Plus', u'fareRefer': u'5'}], 
+
+
+
+[{u'product_name': u'RENFE TICKET on DEPARTURE & RESER  WEB', u'total_price': u'203.10', u'Preferente': u'203.10', u'class': u'Preferente', u'fareRefer': u'6'}, 
+
+{u'Turista': u'233.10', u'product_name': u'RENFE TICKET on DEPARTURE & RESER. PROMO+', u'total_price': u'233.10', u'class': u'Turista', u'fareRefer': u'7'}, 
+
+{u'product_name': u'RENFE TICKET on DEPARTURE & RESER. PROMO+', u'total_price': u'221.10', u'Turista Plus': u'221.10', u'class': u'Turista Plus', u'fareRefer': u'8'}
+
+], [
+{u'product_name': u'RENFE TICKET on DEPARTURE & RESER. PROMO+', u'total_price': u'227.10', u'Preferente': u'227.10', u'class': u'Preferente', u'fareRefer': u'9'}],

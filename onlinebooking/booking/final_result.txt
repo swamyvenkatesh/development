@@ -1,0 +1,119 @@
+[{u'arrival': u'13:18:00', u'changes': 4, u'departure': u'08:09:00'}, 
+{u'arrival': u'13:52:00', u'changes': 3, u'departure': u'08:09:00'}, 
+{u'arrival': u'14:18:00', u'changes': 3, u'departure': u'08:39:00'}, 
+{u'arrival': u'15:52:00', u'changes': 2, u'departure': u'09:07:00'}, 
+{u'arrival': u'14:18:00', u'changes': 4, u'departure': u'09:09:00'}]
+
+
+
+
+
+
+
+[
+{u'arrival': u'13:18:00', u'changes': 4, u'departure': u'08:09:00', 
+	u'jouney_details': 
+	[u' Train 0809 Depart Chichester at 08:09:00 - Arrive London Victoria at 09:40:00', 
+	u' Train 0940 Depart London Victoria at 09:40:00 - Arrive London Euston at 10:40:00', 
+	u' Train 1040 Depart London Euston at 10:40:00 - Arrive Crewe at 12:10:00', 
+
+	u' Train 1223 Depart Crewe at 12:23:00 - Arrive Chester at 12:46:00', 
+
+	u' Train 1302 Depart Chester at 13:02:00 - Arrive Delamere at 13:18:00']
+}, 
+{u'arrival': u'13:52:00', u'changes': 3, u'departure': u'08:09:00', u'jouney_details': 		[u' Train 0809 Depart Chichester at 08:09:00 - Arrive London Victoria at 09:40:00', u' Train 0940 Depart London Victoria at 09:40:00 - Arrive London Euston at 10:20:00', u' Train 1020 Depart London Euston at 10:20:00 - Arrive Stockport at 12:16:00', u' Train 1252 Depart Stockport at 12:52:00 - Arrive Delamere at 13:52:00']
+}, 
+
+{u'arrival': u'14:18:00', u'changes': 3, u'departure': u'08:39:00', u'jouney_details': [u' Train 0839 Depart Chichester at 08:39:00 - Arrive London Victoria at 10:11:00', u' Train 1011 Depart London Victoria at 10:11:00 - Arrive London Euston at 11:10:00', u' Train 1110 Depart London Euston at 11:10:00 - Arrive Chester at 13:11:00', u' Train 1402 Depart Chester at 14:02:00 - Arrive Delamere at 14:18:00']},
+
+ {u'arrival': u'15:52:00', u'changes': 2, u'departure': u'09:07:00', u'jouney_details': [u' Train 0907 Depart Chichester at 09:07:00 - Arrive Southampton at 10:05:00', u' Train 1017 Depart Southampton at 10:17:00 - Arrive Stockport at 14:13:00', u' Train 1452 Depart Stockport at 14:52:00 - Arrive Delamere at 15:52:00']}, 
+
+ {u'arrival': u'14:18:00', u'changes': 4, u'departure': u'09:09:00', u'jouney_details': [u' Train 0909 Depart Chichester at 09:09:00 - Arrive London Victoria at 10:41:00', u' Train 1041 Depart London Victoria at 10:41:00 - Arrive London Euston at 11:40:00', u' Train 1140 Depart London Euston at 11:40:00 - Arrive Crewe at 13:11:00', u' Train 1323 Depart Crewe at 13:23:00 - Arrive Chester at 13:46:00', u' Train 1402 Depart Chester at 14:02:00 - Arrive Delamere at 14:18:00']}
+
+ ] Chichester Delamere
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ [{u'arrival': u'13:18:00', u'index': 1, u'journey_details': [u' Train 0809 Depart Chichester at 08:09:00 - Arrive London Victoria at 09:40:00', u' Train 0940 Depart London Victoria at 09:40:00 - Arrive London Euston at 10:40:00', u' Train 1040 Depart London Euston at 10:40:00 - Arrive Crewe at 12:10:00', u' Train 1223 Depart Crewe at 12:23:00 - Arrive Chester at 12:46:00', u' Train 1302 Depart Chester at 13:02:00 - Arrive Delamere at 13:18:00'], u'departure': u'08:09:00', u'duration': datetime.timedelta(0, 18540), u'changes': 4}, {u'arrival': u'13:52:00', u'index': 2, u'journey_details': [u' Train 0809 Depart Chichester at 08:09:00 - Arrive London Victoria at 09:40:00', u' Train 0940 Depart London Victoria at 09:40:00 - Arrive London Euston at 10:20:00', u' Train 1020 Depart London Euston at 10:20:00 - Arrive Stockport at 12:16:00', u' Train 1252 Depart Stockport at 12:52:00 - Arrive Delamere at 13:52:00'], u'departure': u'08:09:00', u'duration': datetime.timedelta(0, 20580), u'changes': 3}, {u'arrival': u'14:18:00', u'index': 3, u'journey_details': [u' Train 0839 Depart Chichester at 08:39:00 - Arrive London Victoria at 10:11:00', u' Train 1011 Depart London Victoria at 10:11:00 - Arrive London Euston at 11:10:00', u' Train 1110 Depart London Euston at 11:10:00 - Arrive Chester at 13:11:00', u' Train 1402 Depart Chester at 14:02:00 - Arrive Delamere at 14:18:00'], u'departure': u'08:39:00', u'duration': datetime.timedelta(0, 20340), u'changes': 3}, {u'arrival': u'15:52:00', u'index': 4, u'journey_details': [u' Train 0907 Depart Chichester at 09:07:00 - Arrive Southampton at 10:05:00', u' Train 1017 Depart Southampton at 10:17:00 - Arrive Stockport at 14:13:00', u' Train 1452 Depart Stockport at 14:52:00 - Arrive Delamere at 15:52:00'], u'departure': u'09:07:00', u'duration': datetime.timedelta(0, 24300), u'changes': 2}, {u'arrival': u'14:18:00', u'index': 5, u'journey_details': [u' Train 0909 Depart Chichester at 09:09:00 - Arrive London Victoria at 10:41:00', u' Train 1041 Depart London Victoria at 10:41:00 - Arrive London Euston at 11:40:00', u' Train 1140 Depart London Euston at 11:40:00 - Arrive Crewe at 13:11:00', u' Train 1323 Depart Crewe at 13:23:00 - Arrive Chester at 13:46:00', u' Train 1402 Depart Chester at 14:02:00 - Arrive Delamere at 14:18:00'], u'departure': u'09:09:00', u'duration': datetime.timedelta(0, 18540), u'changes': 4}] 5 Chichester Delamere
+[{u'total_price': u'948.00', u'class': u'First', u'First': u'948.00'}, {u'total_price': u'738.00', u'class': u'Standard', u'Standard': u'738.00'}, {u'total_price': u'981.00', u'class': u'First', u'First': u'981.00'}, {u'total_price': u'486.00', u'class': u'Standard', u'Standard': u'486.00'}, {u'total_price': u'624.00', u'class': u'First', u'First': u'624.00'}, {u'total_price': u'423.00', u'class': u'Standard', u'Standard': u'423.00'}, {u'total_price': u'141.00', u'class': u'Standard', u'Standard': u'141.00'}]
+
+========================================================
+[[{u'total_price': u'948.00', u'First': u'948.00'}, {u'total_price': u'738.00', u'Standard': u'738.00'}], [{u'total_price': u'981.00', u'First': u'981.00'}, {u'total_price': u'486.00', u'Standard': u'486.00'}], [{u'total_price': u'624.00', u'First': u'624.00'}, {u'total_price': u'423.00', u'Standard': u'423.00'}], [{u'total_price': u'141.00', u'Standard': u'141.00'}]]
+
+
+
+
+
+
+
+
+
+
+
+
+==================================== 23 rd Out put ============================
+[[{u'product_name': u'TICKET on DEPARTURE & RESERVATION -ANYTIME via:ANY PERMITTED - Travel is allowed via any permitted route.', u'total_price': u'948.00', u'class': u'First', u'sale_condition': OrderedDict([(u'@RefundPolicy', u'Non-Refundable'), (u'TermsAndConditions', OrderedDict([(u'@MustAcknowledge', u'true'), (u'@URL', u'http://www.acprail.com/railways-terms-and-conditions/TTL-tod-ow-withres-anytime.html')])), (u'RefundRules', OrderedDict([(u'RefundRule', OrderedDict([(u'@Sequence', u'1'), (u'@DateBasis', u'Issue'), (u'@WithinDateBasis', u'P0D'), (u'@PenaltyRate', u'100.0'), (u'@MinimumPenalty', u'0.0')]))]))]), u'fareRefer': u'1'}, {u'product_name': u'TICKET on DEPARTURE & RESERVATION -ANYTIME via:ANY PERMITTED - Travel is allowed via any permitted route.', u'total_price': u'738.00', u'class': u'Standard', u'sale_condition': OrderedDict([(u'@RefundPolicy', u'Non-Refundable'), (u'TermsAndConditions', OrderedDict([(u'@MustAcknowledge', u'true'), (u'@URL', u'http://www.acprail.com/railways-terms-and-conditions/TTL-tod-ow-withres-anytime.html')])), (u'RefundRules', OrderedDict([(u'RefundRule', OrderedDict([(u'@Sequence', u'1'), (u'@DateBasis', u'Issue'), (u'@WithinDateBasis', u'P0D'), (u'@PenaltyRate', u'100.0'), (u'@MinimumPenalty', u'0.0')]))]))]), u'fareRefer': u'2'}], [{u'product_name': u'TICKET on DEPARTURE & RESERVATION -ANYTIME via:VIA BANBURY - Valid only for travel via (changing trains or passing through) Banbury.', u'total_price': u'981.00', u'class': u'First', u'sale_condition': OrderedDict([(u'@RefundPolicy', u'Non-Refundable'), (u'TermsAndConditions', OrderedDict([(u'@MustAcknowledge', u'true'), (u'@URL', u'http://www.acprail.com/railways-terms-and-conditions/TTL-tod-ow-withres-anytime.html')])), (u'RefundRules', OrderedDict([(u'RefundRule', OrderedDict([(u'@Sequence', u'1'), (u'@DateBasis', u'Issue'), (u'@WithinDateBasis', u'P0D'), (u'@PenaltyRate', u'100.0'), (u'@MinimumPenalty', u'0.0')]))]))]), u'fareRefer': u'3'}, {u'product_name': u'TICKET on DEPARTURE & RESERVATION -ANYTIME via:VIA BANBURY - Valid only for travel via (changing trains or passing through) Banbury.', u'total_price': u'486.00', u'class': u'Standard', u'sale_condition': OrderedDict([(u'@RefundPolicy', u'Non-Refundable'), (u'TermsAndConditions', OrderedDict([(u'@MustAcknowledge', u'true'), (u'@URL', u'http://www.acprail.com/railways-terms-and-conditions/TTL-tod-ow-withres-anytime.html')])), (u'RefundRules', OrderedDict([(u'RefundRule', OrderedDict([(u'@Sequence', u'1'), (u'@DateBasis', u'Issue'), (u'@WithinDateBasis', u'P0D'), (u'@PenaltyRate', u'100.0'), (u'@MinimumPenalty', u'0.0')]))]))]), u'fareRefer': u'4'}], [{u'product_name': u'TICKET on DEPARTURE & RESERVATION -OFFPEAK via:ANY PERMITTED - Travel is allowed via any permitted route.', u'total_price': u'624.00', u'class': u'First', u'sale_condition': OrderedDict([(u'@RefundPolicy', u'Non-Refundable'), (u'TermsAndConditions', OrderedDict([(u'@MustAcknowledge', u'true'), (u'@URL', u'http://www.acprail.com/railways-terms-and-conditions/TTL-tod-ow-withres-offpeak.html')])), (u'RefundRules', OrderedDict([(u'RefundRule', OrderedDict([(u'@Sequence', u'1'), (u'@DateBasis', u'Issue'), (u'@WithinDateBasis', u'P0D'), (u'@PenaltyRate', u'100.0'), (u'@MinimumPenalty', u'0.0')]))]))]), u'fareRefer': u'5'}, {u'product_name': u'TICKET on DEPARTURE & RESERVATION -OFFPEAK via:ANY PERMITTED - Travel is allowed via any permitted route.', u'total_price': u'423.00', u'class': u'Standard', u'sale_condition': OrderedDict([(u'@RefundPolicy', u'Non-Refundable'), (u'TermsAndConditions', OrderedDict([(u'@MustAcknowledge', u'true'), (u'@URL', u'http://www.acprail.com/railways-terms-and-conditions/TTL-tod-ow-withres-offpeak.html')])), (u'RefundRules', OrderedDict([(u'RefundRule', OrderedDict([(u'@Sequence', u'1'), (u'@DateBasis', u'Issue'), (u'@WithinDateBasis', u'P0D'), (u'@PenaltyRate', u'100.0'), (u'@MinimumPenalty', u'0.0')]))]))]), u'fareRefer': u'6'}], [{u'product_name': u'TICKET on DEPARTURE & RESERVATION -ADVANCE via:XC &CONNECTIONS - Only valid on booked CrossCountry services and required connecting services.', u'total_price': u'141.00', u'class': u'Standard', u'sale_condition': OrderedDict([(u'@RefundPolicy', u'Non-Refundable'), (u'TermsAndConditions', OrderedDict([(u'@MustAcknowledge', u'true'), (u'@URL', u'http://www.acprail.com/railways-terms-and-conditions/TTL-tod-ow-withres-advance.html')])), (u'RefundRules', OrderedDict([(u'RefundRule', OrderedDict([(u'@Sequence', u'1'), (u'@DateBasis', u'Issue'), (u'@WithinDateBasis', u'P0D'), (u'@PenaltyRate', u'100.0'), (u'@MinimumPenalty', u'0.0')]))]))]), u'fareRefer': u'7'}]] 
+
+
+
+
+
+
+
+
+
+
+777777777777777777777777777777732444999999999999999999999999&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&77
+
+
+[
+[
+	{u'product_name': u'TICKET on DEPARTURE & RESERVATION -ANYTIME via:ANY PERMITTED - Travel is allowed via any permitted route.', u'total_price': u'948.00', u'class': u'First', u'fareRefer': u'1'}, 
+	{u'product_name': u'TICKET on DEPARTURE & RESERVATION -ANYTIME via:ANY PERMITTED - Travel is allowed via any permitted route.', u'total_price': u'738.00', u'class': u'Standard', u'fareRefer': u'2'}
+	],
+
+ [
+ 	{u'product_name': u'TICKET on DEPARTURE & RESERVATION -ANYTIME via:VIA BANBURY - Valid only for travel via (changing trains or passing through) Banbury.', u'total_price': u'981.00', u'class': u'First', u'fareRefer': u'3'},
+
+ 	 {u'product_name': u'TICKET on DEPARTURE & RESERVATION -ANYTIME via:VIA BANBURY - Valid only for travel via (changing trains or passing through) Banbury.', u'total_price': u'486.00', u'class': u'Standard', u'fareRefer': u'4'}],
+
+ 	  [{u'product_name': u'TICKET on DEPARTURE & RESERVATION -OFFPEAK via:ANY PERMITTED - Travel is allowed via any permitted route.', u'total_price': u'624.00', u'class': u'First', u'fareRefer': u'5'}, 
+
+ 	  {u'product_name': u'TICKET on DEPARTURE & RESERVATION -OFFPEAK via:ANY PERMITTED - Travel is allowed via any permitted route.', u'total_price': u'423.00', u'class': u'Standard', u'fareRefer': u'6'}], 
+
+
+ 	  [{u'product_name': u'TICKET on DEPARTURE & RESERVATION -ADVANCE via:XC &CONNECTIONS - Only valid on booked CrossCountry services and required connecting services.', u'total_price': u'141.00', u'class': u'Standard', u'fareRefer': u'7'}]]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[{u'Turista': u'308.10', u'product_name': u'RENFE TICKET on DEPARTURE & RESERVATION', u'total_price': u'308.10', u'class': u'Turista', u'fareRefer': u'1'}, {u'product_name': u'RENFE TICKET on DEPARTURE & RESERVATION', u'total_price': u'365.10', u'Turista Plus': u'365.10', u'class': u'Turista Plus', u'fareRefer': u'2'}, {u'product_name': u'RENFE TICKET on DEPARTURE & RESERVATION', u'total_price': u'506.10', u'Preferente': u'506.10', u'class': u'Preferente', u'fareRefer': u'3'}, {u'Turista': u'218.10', u'product_name': u'RENFE TICKET on DEPARTURE & RESER  WEB', u'total_price': u'218.10', u'class': u'Turista', u'fareRefer': u'4'}, {u'product_name': u'RENFE TICKET on DEPARTURE & RESER  WEB', u'total_price': u'203.10', u'Turista Plus': u'203.10', u'class': u'Turista Plus', u'fareRefer': u'5'}, {u'product_name': u'RENFE TICKET on DEPARTURE & RESER  WEB', u'total_price': u'203.10', u'Preferente': u'203.10', u'class': u'Preferente', u'fareRefer': u'6'}, {u'Turista': u'233.10', u'product_name': u'RENFE TICKET on DEPARTURE & RESER. PROMO+', u'total_price': u'233.10', u'class': u'Turista', u'fareRefer': u'7'}, {u'product_name': u'RENFE TICKET on DEPARTURE & RESER. PROMO+', u'total_price': u'221.10', u'Turista Plus': u'221.10', u'class': u'Turista Plus', u'fareRefer': u'8'}, {u'product_name': u'RENFE TICKET on DEPARTURE & RESER. PROMO+', u'total_price': u'227.10', u'Preferente': u'227.10', u'class': u'Preferente', u'fareRefer': u'9'}]
