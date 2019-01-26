@@ -1,0 +1,20 @@
+==========================================================
+Also, needs to add sales conditions . Departure and Arrival time format should be "hh:mm" like "08:30" not as "08:30:00"
+
+======================================================================
+
+Also, "Price From" should display the lowest price. If there are no fares for the train, then it should display just display "details"
+=============================================================
+wherever you are display "from" and "To" on the tickets page .. You should always display Name from below elements.
+
+      <OriginLocation LocationCode="7100600" Name="Madrid-Puerta De Atocha" Country="ES"/>
+            <DestinationLocation LocationCode="7171801" Name="Barcelona Sants " Country="ES"/>
+
+Fares:
+
+while displaying fare, instead of ProductName , can you display "ProdMarketingName"
+
+========================================================
+
+After 2 nd page ------ > redirects to "traveler-info.html(3rd page)
+-------->checkout.html(4th page)------>summary.html(5th page) ---->summary1.html
