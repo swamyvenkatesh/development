@@ -38,6 +38,8 @@ def allview(request):
         request.session['destination'] = str(destStattion)
         request.session['deptDate'] = str(actual_date)
         request.session['deptTime'] = str(departureTime)
+        request.session['adults'] = int(numAdults)
+        request.session['children'] = int(numChilds)
         return HttpResponseRedirect('/alltest/ticket/')        
     else:
         return render(request,"booking/index.html",{})
@@ -50,7 +52,9 @@ def ticket_view(request):
     destinationLoc = request.session['destination']
     date_string = request.session['deptDate']+"T"+request.session['deptTime']
     date_time_obj = datetime.strptime(request.session['deptDate'], '%Y-%m-%d')     
-    display_date = date_time_obj.date()  
+    display_date = date_time_obj.date()
+    no_of_adults = request.session['adults'] 
+    no_of_childs = request.session['children']  
     
     wb=open_workbook(os.path.join(settings.MEDIA_ROOT, "FE-locations.xlsx"))
     worksheet = wb.sheet_by_index(0)
@@ -253,7 +257,10 @@ def ticket_view(request):
                 dd = {}
                 ddd = {}    
 
-            return render(request,"booking/tickets.html",{"loc":originLoc,"point":destinationLoc,"dateinfo":display_date, "final_result":result_list, "prices_data":sample, 'classes':fare_classes_list, 'result_output':final_list} )        
+            return render(request,"booking/tickets.html",
+                {"loc":originLoc,"point":destinationLoc,"dateinfo":display_date, 
+                "final_result":result_list, "prices_data":sample, 'classes':fare_classes_list, 
+                'result_output':final_list, 'adults':no_of_adults, 'childs':no_of_childs} )        
         else:
             return HttpResponse("Getting Web Service Error")
     else:
@@ -262,8 +269,43 @@ def ticket_view(request):
 
 
 
+def traveller_ajax_info(request):
+    if request.method == "GET":
+        adults = request.GET.get('adults_num')
+        childs = request.GET.get('child_num')
+        date_text = request.GET.get('date_text')
+
+
+
+        return render(request,"booking/traveller-information.html",
+            {'adults_count':adults,'child_count':childs, 'date_text':date_text})
+        # return HttpResponse("test")
+    else:
+        pass
+
 def traveller_info(request):
-    return render(request,"booking/traveller-information.html",{})
+    # no_of_adults = request.session['adults'] 
+    # no_of_childs = request.session['children']
+    no_of_adults = 3
+    no_of_childs = 2
+    date_text = "Madrid - Barcelona - Jan. 30, 2019"
+    # if request.method == "GET":
+    #     adults = request.GET.get('adults_num')
+    #     childs = request.GET.get('child_num')
+    #     date_text = request.GET.get('date_text')
+
+
+
+    #     return render(request,"booking/traveller-information.html",
+    #         {'adults_count':adults,'child_count':childs, 'date_text':date_text})
+    #     return HttpResponse("test")
+    # else:
+    #     return render(request,"booking/traveller-information.html",
+    #         {'adults_count':no_of_adults,'child_count':no_of_childs,'date_text':date_text})
+
+    
+    return render(request,"booking/traveller-information.html",
+            {'adults_count':no_of_adults,'child_count':no_of_childs,'date_text':date_text})
 
 
 def api_call(request):  

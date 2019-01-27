@@ -49,25 +49,27 @@
       <div class="col-md-12" style="padding-top:5px;">
         <h3> Traveller Information </h3>
         <br>
-        <p class="heading">Roma Termini - Milano Centrale - Jan 1st, 2019</p>
-        <div class="row">
-          <div class="col-md-1 col-xs-2">
-            <p class="pull-right" style="padding-top:5px;">Adult</p>
+        <p class="heading">{{date_text}}</p>
+        {{adults_count}} <br>{{child_count}}
+
+          <div class="row">
+              <div class="col-md-1 col-xs-2">
+                <p class="pull-right" style="padding-top:5px;">Adult</p>
+              </div>
+              <div class="col-md-2 col-xs-4">
+                <select class="form-control">
+                  <option>Mr</option>
+                  <option>Mrs</option>
+                  <option>Ms</option>
+                </select>
+              </div>
+              <div class="col-md-3 col-xs-12">
+                <input type="text" class="form-control" placeholder="First name">
+              </div>
+              <div class="col-md-3">
+                <input type="text" class="form-control" placeholder="Last name">
+              </div>
           </div>
-          <div class="col-md-2 col-xs-4">
-            <select class="form-control">
-              <option>Mr</option>
-              <option>Mrs</option>
-              <option>Ms</option>
-            </select>
-          </div>
-          <div class="col-md-3 col-xs-12">
-            <input type="text" class="form-control" placeholder="First name">
-          </div>
-          <div class="col-md-3">
-            <input type="text" class="form-control" placeholder="Last name">
-          </div>
-        </div>
         <br>
         <div class="row">
           <div class="col-md-1 col-xs-2">

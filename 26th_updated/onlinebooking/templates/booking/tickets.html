@@ -48,7 +48,10 @@
         <div class="row">
           <div class="panel panel-default">
             <div class="panel-heading">
-              <h6 style="font-size:17px;"> {{loc}} - {{point}} - {{dateinfo}}</h6>
+              <h6 id="head_data" style="font-size:17px;"> {{loc}} - {{point}} - {{dateinfo}}</h6>
+
+              <input type="hidden" name="adults_count" id="adultsCount" value="{{adults}}">
+              <input type="hidden" name="child_count" id="childCount" value="{{childs}}">
             </div> 
             <div class="table-responsive">
               <table class="table">
@@ -156,7 +159,7 @@
                                       {%for ik, jk in j.items %}
                                         {% for class in classes%}
                                           {%if class == ik%}
-                                            <td class="text-center"><a href="{% url 'traveller' %}"><p  class="btn btn-default  " title="Add to cart"   style="width:100%"> £{{jk}}&nbsp;<span class="glyphicon glyphicon-shopping-cart" style="font-size:0.8em;"></span> </p></a></td>
+                                            <td class="text-center"><a href="{% url 'traveller' %}"><p  class="btn btn-default  " onclick="infoFunction()" title="Add to cart"   style="width:100%"> £{{jk}}&nbsp;<span class="glyphicon glyphicon-shopping-cart" style="font-size:0.8em;"></span> </p></a></td>
                                             {%else%}
                                               <td></td>
                                             {%endif%}
@@ -213,7 +216,30 @@
 <script type="text/javascript" src="js/formset.f7d6a977d248.js"></script>
 
 
+<script >
+  function infoFunction(){
+    adults = $("#adultsCount").val()
+    childs = $("#childCount").val()
+    date_text = $("#head_data").text()
+
+
+    $.ajax({
+        type:"GET",
+        url:"/process/traveller_info/",
+        data:{"adults_num":adults, "child_num":childs, "date_text":date_text},
+        success:function(data)
+        { 
+          // alert("success");
+          console.log("Data Displayed")
+        }
+      });
+
+  }
+</script>
+
 </body>
+
+
 
 
 
