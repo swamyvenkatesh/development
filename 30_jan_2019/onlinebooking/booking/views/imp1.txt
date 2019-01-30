@@ -1,0 +1,35 @@
+{'ACP_RailAvailRS': {'@xmlns': 'http://www.acprailinternational.com/API/R2', 'Errors': {'Error': {'@ShortText': 'Web Service Error: invalid-http-code', '@Code': '803', '#text': 'Invalid HTTP code received: 503', '@Type': '3'}}, '@Target': 'Production', '@TimeStamp': '2019-01-21T06:19:37', '@xmlns:xsi': 'http://www.w3.org/2001/XMLSchema-instance', '@Version': '1.001', '@xsi:schemaLocation': 'http://www.acprailinternational.com/API/R2 ACP_RailAvailRS.xsd'}}
+
+
+
+<div>{{jj.train}}</div>
+                                        <div>{{jj.dept_station}}</div>
+                                        <div>{{jj.dept_time}}</div>
+                                        <div>{{jj.arr_station}}</div>
+                                        <div>{{jj.arr_time}}</div>
+
+
+
+                                        with open("/home/swamy/Documents/python/onlinebooking/booking/rome2_xml.xml", "w") as dd:
+            dd.write(str(response))
+        # print response   
+
+
+
+====================== only one change =========================================
+
+
+OrderedDict([(u'TrainSegment', 
+OrderedDict([(u'@DepartureDateTime', u'2019-01-30T06:10:00'), 
+
+(u'@ArrivalDateTime', u'2019-01-30T08:40:00'), 
+(u'@TrainNumber', u'03061'), 
+(u'@JourneyDuration', u'PT2H30M'), 
+(u'@TrainServiceType', u'AVE'), 
+(u'@CrossBorder', u'false'),
+ (u'@ReservationMode', u'Required'), 
+ (u'@OperatorName', u'Renfe'), 
+ (u'DepartureStation', OrderedDict([(u'@LocationCode', u'7100600'),
+  (u'@Name', u'Madrid-Puerta De Atocha'), (u'@Country', u'ES')])), 
+
+  (u'ArrivalStation', OrderedDict([(u'@LocationCode', u'7171801'), (u'@Name', u'Barcelona Sants '), (u'@Country', u'ES')])), (u'ClassCodes', None)]))])

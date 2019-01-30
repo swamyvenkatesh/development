@@ -1,0 +1,45 @@
+
+1) Rome - Milan 
+Its breaking...because there are no fares in the response. I sent you few error scenarios earlier
+2)if there are no trains.. you should display error message on the first page itself.
+
+If there are trains but no fares.. we should just display trains without any pricing.
+
+
+
+3) I just tested London to Paris. First train returning 2 fares
+
+ 
+
+Fare1: Class="Semi flex (BR) - Standard"  
+
+ProductName="Eurostar E-TICKET AND RESERVATION SEMI FLEXIBLE"
+
+ 
+
+Fare2:
+
+Class="Semi flex (HX) - Std Premier"
+
+ProductName="Eurostar E-TICKET AND RESERVATION SEMI FLEXIBLE"
+
+ 
+
+Both the fares are of the same product which is "Eurostar E-TICKET AND RESERVATION SEMI FLEXIBLE" . But Ticket page is showing “Eurostar E-Ticket and Reservation Fully Flexible” also. This train doesn’t have this fare. Attached are the logs and screenshot. Hope this helps. We have to display only fares which are applicable to that journey.
+
+4)I am talking about displaying wrong fares for the particular journey.
+
+
+============================
+
+5)Shaik Irfan
+	
+Mon, Jan 28, 4:47 PM (13 hours ago)
+	
+to me
+Also the value of RequesterID should be taken from settings.
+
+
+<RequestorID>RTG-XML</RequestorID>
+
+
