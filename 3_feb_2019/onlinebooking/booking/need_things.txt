@@ -1,0 +1,198 @@
+cart tables are actual tables not temp tables
+Also, we need to maintain sessionid, so that user can add more than one product to the cart based on session id... 
+
+
+----------------------------------------
+
+    print "after calling function"
+
+
+    li = []
+
+    print all_data
+    li.append(all_data)
+
+----------------------------
+
+
+train
+train category
+departure time
+arrival time
+origin location
+origin location code
+dest location 
+dest locatio code
+
+
+passengers total(all)
+ net fare
+
+ first name
+ last name 
+ passport
+ nationality
+ dob
+
+
+==========================
+
+
+
+    #  Cart Creation
+
+    cart_details = Cart.objects.filter(id=13)
+    cartId = 0
+    if cart_details:
+        print "cart  if condition"          
+        for i in cart_details:
+            print i.sessionId, i.created_date,i.netprice
+            cartId = i.id
+            print "success"
+    else:
+        print "cart else condition"
+        cart_details = Cart.objects.create(sessionId=1235,created_date=datetime.now(),booking_ref='',
+        user_id=124,agent_ref='second record',notes='updating second cart',status=0,
+        currency_id=0,netprice=Money(fare, 'GBP'))
+        for i in cart_details:
+            print i.sessionId, i.created_date,i.netprice
+            cartId = i.id                  
+
+
+    #  Cart Products Creation
+
+    cartProductId = 0
+    cartProduct = CartProducts.objects.filter(cart_id=cartId)
+    print cartProduct
+    
+    if cartProduct:
+        print "cart products if condition"
+        for i in cartProduct:
+            print i,"========"
+            cartProductId = i.cart_id
+    else:
+        print "cart products else condition"        
+        cartProduct = CartProducts.objects.create(cart_id=cartId,product_name='Standard',product_id=1,
+        status=0,netprice=Money(fare, 'GBP'),passengers_num=3)
+        for i in cartProduct:
+            cartProductId = i.cart_id
+
+
+
+    # Cart Product Details Creation
+
+    prodDetailsId = 0
+    productDetails = CartProductDetails.objects.filter(cart_product_id=cartProductId)
+    if productDetails:
+        print "cart product details if condition" 
+
+
+    else:
+        print "cart product details else condition"  
+        productDetails = CartProductDetails.objects.create(
+
+            cart_product_id=cartProductId,from_station="",
+        to_station="",from_code="",to_code="",departure_date="",
+        arrival_date="",train="",train_category="")
+        print "cart product passsenger  created"        
+
+
+    print productDetails 
+    print cartProductId
+    print cartProduct    
+
+
+    passengersId = 0
+    cartPassengers = CartProductPassengers.objects.filter(cart_product_id=cartProductId)
+    if cartPassengers:
+        print "cart product passengers if condition" 
+        # for i in cartPassengers:
+        #     passengersId = i.cart_product_id
+    else:
+        print "cart product passengers else condition" 
+        cartPassengers = CartProductPassengers.objects.create(cart_product_id=cartProductId,first_name="sunitha",
+        last_name="swain",dob=datetime.now(),nationality="false", passport="false")
+        print "cart product passsenger  created"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+    # cart = Cart.objects.create(sessionId=1235,created_date=datetime.now(),booking_ref='',
+    #     user_id=124,agent_ref='second record',notes='updating second cart',status=0,
+    #     currency_id=0,netprice=Money(fare, 'GBP'))
+    # print "cart creation done "
+
+    # cart_data = Cart.objects.all()
+    # print cart_data
+    # cartId = 0
+    # for i in cart_data:
+    #     cartId = i.id
+
+    # print cartId
+
+    # cart_product = CartProducts.objects.create(cart_id=cart,product_name='Standard',product_id=1,
+    #     status=0,netprice=Money(fare, 'GBP'),passengers_num=3)
+    # print "after completion of cart product"
+
+    # print cart_product
+
+    # cart_product_passengers = CartProductPassengers.ojects.create(cart_product_id=cart_product,first_name="",
+    #     last_name="",dob=datetime.now(),nationality="", passport="")
