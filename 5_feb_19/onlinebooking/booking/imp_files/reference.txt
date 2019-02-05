@@ -1,0 +1,137 @@
+    # city = request.session['name']
+    # print city
+    # originLoc = "Madrid"
+    # destinationLoc = "Barcelona"
+    # originLoc = "London"
+    # destinationLoc = "Paris"
+    # originLoc = "Chichester"
+    # destinationLoc = "Delamere"
+    # originLoc = "Rome Fiumicino Aeroporto"
+    # destinationLoc = "Venice Santa Lucia"
+    # date = "2019-01-30"
+    # date_string = "2019-01-30T08:00"
+
+
+
+
+
+    These are the cart related models (tables)
+
+ 
+
+1.cart
+
+ 
+
+id PK
+
+created_date  (timestamp)
+
+booking_ref  character (max 250)
+
+user_id int
+
+Agent_ref character (max 250)
+
+notes character (max 500)
+
+Status int
+
+currency_id int
+
+netpricegbp money
+
+grosspricegbp money
+
+commisiongbp money
+
+bookingfeegbp money
+
+ 
+
+ 
+
+2.cart_products
+
+Id PK
+
+cart_id  reference to cart.id
+
+product_id int
+
+Productname char (max 250)
+
+startdate date
+
+numpassengers int
+
+status int
+
+netpricegbp money
+
+grosspricegbp money
+
+commisiongbp money
+
+ 
+
+3. cart_product_details
+
+ID PK
+
+cart_product_id reference cart_products.cart_id
+
+From char (max 250)
+
+To char (max 250)
+
+Fromcode char (20)
+
+Tocode char (20)
+
+departuredate datetime
+
+arrivaldate datetime
+
+Train char (20)
+
+traincategory char(50)
+
+ 
+
+4. cart_product_passengers
+
+ID PK
+
+cart_product_id reference cart_products.cart_id
+
+Firstname char (max 250)
+
+lastname char (max 250)
+
+dob date
+
+nationality char(250)
+
+passport char (250)
+
+ 
+
+Let me know if you have any questions.
+
+ 
+
+Thanks
+
+Shaik
+
+
+
+from django.db import models
+
+class Product(models.Model):
+    item= models.CharField(max_length=200)
+    price= models.DecimalField(max_digits=10, decimal_places=2)
+
+    def __str__(self):
+        return str(self.item) + ": $" + str(self.price)

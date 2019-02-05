@@ -1,0 +1,62 @@
+==========================================================
+Also, needs to add sales conditions . Departure and Arrival time format should be "hh:mm" like "08:30" not as "08:30:00"
+
+======================================================================
+
+Also, "Price From" should display the lowest price. If there are no fares for the train, then it should display just display "details"
+=============================================================
+wherever you are display "from" and "To" on the tickets page .. You should always display Name from below elements.
+
+      <OriginLocation LocationCode="7100600" Name="Madrid-Puerta De Atocha" Country="ES"/>
+            <DestinationLocation LocationCode="7171801" Name="Barcelona Sants " Country="ES"/>
+
+Fares:
+
+while displaying fare, instead of ProductName , can you display "ProdMarketingName"
+
+========================================================
+
+After 2 nd page ------ > redirects to "traveler-info.html(3rd page)
+-------->checkout.html(4th page)------>summary.html(5th page) ---->summary1.html
+
+===================================================== 27/01/2019 =============================================================
+
+1. Based on number of passengers inputed on the first screens.. We need to capture passenger info for all the passengers after tickets page.. 
+
+ Fields on the passenger info is dynamic based on the attributes under fares as shown. whatever its true we should display those fields.
+
+Mandatory fields are Names other field are based on following atrributes. 
+
+TicketOption="ETK" PassportRequired="false" DateOfBirthRequired="false" PaxNameRequested="true" CntryResidenceRequired="false" NationalityRequired="false" PlaceOfBirthRequired="false" EmailRequired="false" 
+
+All these info should be captured for each passenger. Hope this is clear.
+
+----
+
+also, I have mentioned few more details by email on friday .
+
+wherever you are display "from" and "To" on the tickets page .. You should always display Name from below elements.
+
+      <OriginLocation LocationCode="7100600" Name="Madrid-Puerta De Atocha" Country="ES"/>
+            <DestinationLocation LocationCode="7171801" Name="Barcelona Sants " Country="ES"/>
+
+Fares:
+
+while displaying fare, instead of ProductName , can you display "ProdMarketingName"
+
+=====================================================================27/01/2019 =============================================================
+
+Flow :
+index --> ticktes.html --> Traveler-information.html --> checkout.html --> From Checkout , User will have 2 choices InvoicemyCompany Or Pay now . 
+
+InvoiceMyCompnay --> summary.html
+
+paynow --> summary1.html
+
+---
+
+Attached is the postgre db backup and you can restore . This db contains all the booking models.. You need to create only cart tables. Let me know if you have any questions.
+
+Thanks
+
+========================================================================27/01/2019 =============================================================

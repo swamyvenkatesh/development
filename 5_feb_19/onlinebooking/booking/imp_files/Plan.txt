@@ -1,0 +1,7 @@
+For 3 rd Page and 4th page 
+
+
+=---------------------------
+Child , Adults count ( Passpost required fields )
+
+Train no, Price, ( based on Fare reference )

@@ -1,0 +1,125 @@
+
+=============Common XML request ========================================================
+
+<?xml version="1.0" encoding="UTF-8"?>
+            <ACP_RailAvailRQ xmlns="http://www.acprailinternational.com/API/R2" ResponseType="Native-Availability">
+                <POS>
+                    <RequestorID>RTG-XML</RequestorID>
+                </POS>
+                <RailAvailInfo>
+                    <OriginDestinationSpecifications>
+                        <OriginLocation LocationCode="7010720"/>
+                        <DestinationLocation LocationCode="8700015"/>
+                        <Departure DepartureDate="2019-02-06T8:00:00.0Z"/>
+                    </OriginDestinationSpecifications>
+                    <PassengerSpecifications>
+                        <PassengerType Age="-1" Quantity="3"/>
+                    </PassengerSpecifications>
+                    <FareQualifier RateCategory="Regular"/>
+                        <ResponsePtPTypes>
+                            <ResponsePtPType>TW</ResponsePtPType>
+                        </ResponsePtPTypes>
+                </RailAvailInfo>
+            </ACP_RailAvailRQ>
+
+
+====================================================================================== for 3 childs request =============
+<?xml version="1.0" encoding="UTF-8"?><ACP_RailAvailRQ ResponseType="Native-Availability" xmlns="http://www.acprailinternational.com/API/R2"><POS><RequestorID>RTG-XML</RequestorID></POS><RailAvailInfo><OriginDestinationSpecifications><OriginLocation LocationCode="7010720" /><DestinationLocation LocationCode="8700015" /><Departure DepartureDate="2019-02-05T6:30" /></OriginDestinationSpecifications>
+
+<PassengerSpecifications><PassengerType Age="-1" Quantity="3" />
+<PassengerType Age="5" Quantity="1" />
+<PassengerType Age="6" Quantity="1" />
+<PassengerType Age="7" Quantity="1" />
+
+</PassengerSpecifications><FareQualifier RateCategory="Regular" /><ResponsePtPTypes><ResponsePtPType>TW</ResponsePtPType></ResponsePtPTypes></RailAvailInfo></ACP_RailAvailRQ>
+
+
+==============================
+
+chichester - Delamare - feb 20 
+london - paris - feb 5ht
+
+rome mestri - venice mestri 
+========================================
+
+<?xml version="1.0" encoding="UTF-8"?><ACP_RailAvailRQ ResponseType="Native-Availability" xmlns="http://www.acprailinternational.com/API/R2"><POS><RequestorID>RTG-XML</RequestorID></POS><RailAvailInfo><OriginDestinationSpecifications><OriginLocation LocationCode="8300555" /><DestinationLocation LocationCode="8300221" /><Departure DepartureDate="2019-02-21T9:30" /></OriginDestinationSpecifications><PassengerSpecifications><PassengerType Age="-1" Quantity="1" /><PassengerType Age="10" Quantity="1" /><PassengerType Age="12" Quantity="1" /></PassengerSpecifications><FareQualifier RateCategory="Regular" /><ResponsePtPTypes><ResponsePtPType>TW</ResponsePtPType></ResponsePtPTypes></RailAvailInfo></ACP_RailAvailRQ>
+Before request
+
+
+
+
+<?xml version="1.0" encoding="UTF-8"?><ACP_RailAvailRQ ResponseType="Native-Availability" xmlns="http://www.acprailinternational.com/API/R2"><POS><RequestorID>RTG-XML</RequestorID></POS><RailAvailInfo><OriginDestinationSpecifications><OriginLocation LocationCode="7010720" /><DestinationLocation LocationCode="8700015" /><Departure DepartureDate="2019-02-04T8:00" /></OriginDestinationSpecifications>
+
+<PassengerSpecifications>
+
+<PassengerType Age="-1" Quantity="1" />
+<PassengerType Age="4" Quantity="1" />
+
+<PassengerType Age="5" Quantity="1" />
+<PassengerType Age="2" Quantity="1" />
+
+</PassengerSpecifications><FareQualifier RateCategory="Regular" />
+<ResponsePtPTypes><ResponsePtPType>TW</ResponsePtPType></ResponsePtPTypes></RailAvailInfo></ACP_RailAvailRQ>
+
+
+<?xml version="1.0" encoding="UTF-8"?><ACP_RailAvailRQ ResponseType="Native-Availability" xmlns="http://www.acprailinternational.com/API/R2"><POS><RequestorID>RTG-XML</RequestorID></POS><RailAvailInfo><OriginDestinationSpecifications><OriginLocation LocationCode="7010720" /><DestinationLocation LocationCode="8700015" /><Departure DepartureDate="2019-02-04T8:00" /></OriginDestinationSpecifications>
+
+<PassengerSpecifications><PassengerType Age="-1" Quantity="1" />
+<PassengerType Age="4" Quantity="1" />
+<PassengerType Age="5" Quantity="1" />
+<PassengerType Age="2" Quantity="1" /></PassengerSpecifications>
+
+<FareQualifier RateCategory="Regular" /><ResponsePtPTypes><ResponsePtPType>TW</ResponsePtPType></ResponsePtPTypes></RailAvailInfo></ACP_RailAvailRQ>
+
+
+
+<?xml version="1.0" encoding="UTF-8"?><ACP_RailAvailRQ ResponseType="Native-Availability" xmlns="http://www.acprailinternational.com/API/R2"><POS><RequestorID>RTG-XML</RequestorID></POS><RailAvailInfo><OriginDestinationSpecifications><OriginLocation LocationCode="7010720" /><DestinationLocation LocationCode="8700015" /><Departure DepartureDate="2019-02-04T8:00" /></OriginDestinationSpecifications>
+<PassengerSpecifications>
+<PassengerType Age="-1" Quantity="1" />
+<PassengerType Age="1" Quantity="1" />
+<PassengerType Age="4" Quantity="1" />
+<PassengerType Age="3" Quantity="1" />
+</PassengerSpecifications>
+
+<FareQualifier RateCategory="Regular" /><ResponsePtPTypes><ResponsePtPType>TW</ResponsePtPType></ResponsePtPTypes></RailAvailInfo></ACP_RailAvailRQ>
+
+
+
+<?xml version="1.0" encoding="UTF-8"?><ACP_RailAvailRQ ResponseType="Native-Availability" xmlns="http://www.acprailinternational.com/API/R2"><POS><RequestorID>RTG-XML</RequestorID></POS><RailAvailInfo><OriginDestinationSpecifications><OriginLocation LocationCode="7010720" /><DestinationLocation LocationCode="8700015" /><Departure DepartureDate="2019-02-05T12:30" /></OriginDestinationSpecifications>
+
+<PassengerSpecifications>
+<PassengerType Age="-1" Quantity="2" />
+<PassengerType Age="1" Quantity="1" />
+
+<PassengerType Age="5" Quantity="1" />
+<PassengerType Age="6" Quantity="1" />
+
+</PassengerSpecifications>
+
+
+<FareQualifier RateCategory="Regular" /><ResponsePtPTypes><ResponsePtPType>TW</ResponsePtPType></ResponsePtPTypes></RailAvailInfo></ACP_RailAvailRQ>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

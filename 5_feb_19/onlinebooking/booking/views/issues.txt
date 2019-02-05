@@ -1,0 +1,121 @@
+error handling
+loc TDN
+data is not available (popup )
+
+
+==================================================================
+
+1. In the screenshot you sent me and checking the logs.. only train which has fares. You need to look for <FareRPHs> under Journey.
+
+                <Journey JourneyDuration="PT6H45M" IsSubComponent="false">
+
+                    <OriginLocation LocationCode="7000372" Name="Chichester" Country="GB"/>
+                    <DestinationLocation LocationCode="7023060" Name="Delamere" Country="GB"/>
+                    <JourneySegments>
+                        <JourneySegment>
+                            <TrainSegment DepartureDateTime="2019-01-30T09:07:00" ArrivalDateTime="2019-01-30T10:05:00" TrainNumber="0907" JourneyDuration="PT58M" TrainServiceType="Train" CrossBorder="false" OperatorName="ATOC">
+                                <DepartureStation LocationCode="7000372" Name="Chichester" Country="GB"/>
+                                <ArrivalStation LocationCode="7000087" Name="Southampton" Country="GB"/>
+                                <RailAmenities>
+                                    <RailAmenity Name="SN"/>
+                                </RailAmenities>
+                                <ClassCodes/>
+                            </TrainSegment>
+                        </JourneySegment>
+                        <JourneySegment>
+                            <TrainSegment DepartureDateTime="2019-01-30T10:17:00" ArrivalDateTime="2019-01-30T14:13:00" TrainNumber="1017" JourneyDuration="PT3H56M" TrainServiceType="Train" CrossBorder="false" OperatorName="ATOC">
+                                <DepartureStation LocationCode="7000087" Name="Southampton" Country="GB"/>
+                                <ArrivalStation LocationCode="7000187" Name="Stockport" Country="GB"/>
+                                <RailAmenities>
+                                    <RailAmenity Name="XC"/>
+                                </RailAmenities>
+                                <ClassCodes/>
+                            </TrainSegment>
+                        </JourneySegment>
+                        <JourneySegment>
+                            <TrainSegment DepartureDateTime="2019-01-30T14:52:00" ArrivalDateTime="2019-01-30T15:52:00" TrainNumber="1452" JourneyDuration="PT1H" TrainServiceType="Train" CrossBorder="false" OperatorName="ATOC">
+                                <DepartureStation LocationCode="7000187" Name="Stockport" Country="GB"/>
+                                <ArrivalStation LocationCode="7023060" Name="Delamere" Country="GB"/>
+                                <RailAmenities>
+                                    <RailAmenity Name="NT"/>
+                                </RailAmenities>
+                                <ClassCodes/>
+                            </TrainSegment>
+                        </JourneySegment>
+                    </JourneySegments>
+                    <FareRPHs>
+                        <FareRPH>1</FareRPH>
+                        <FareRPH>2</FareRPH>
+                        <FareRPH>3</FareRPH>
+                        <FareRPH>4</FareRPH>
+                        <FareRPH>5</FareRPH>
+                        <FareRPH>6</FareRPH>
+                        <FareRPH>7</FareRPH>
+                    </FareRPHs>
+                </Journey>
+
+
+2. ProductName is hardcoded and you need to add sales conditions on mouse over. see the screenshot.
+
+3. Class is hardcoded
+===============================================
+
+Also check few city pairs like
+
+ 
+
+London to Paris
+
+ 
+
+Madrid to Barcelona
+
+ 
+
+Rome to Venice
+
+
+======================================================
+
+
+Also You need to also capture these fields which are under fare
+
+ 
+
+TicketOption="ETK"
+
+PassportRequired="false"
+
+DateOfBirthRequired="false"
+
+PaxNameRequested="true"
+
+CntryResidenceRequired="false"
+
+NationalityRequired="false"
+
+PlaceOfBirthRequired="false"
+
+ 
+
+Based on these filed we will display fields in the next page.
+
+
+
+
+
+
+
+
+
+
+
+
+
+================
+
+fare
+refund ploicy
+
+FARE RPH
+FareReference="2"
