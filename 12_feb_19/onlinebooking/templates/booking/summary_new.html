@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>Summary</title>
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="{{ STATIC_URL }}/point-to-point/material/css/jquery.datetimepicker.b805db3bb426.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}/point-to-point/css/portal.c2bfd6b9cc10.css">
+<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}/point-to-point/css/styles.css">
+<link rel="stylesheet" href="{{ STATIC_URL }}/point-to-point/css/bootstrap.min.css">
+<script src="{{ STATIC_URL }}/point-to-point/js/jquery.min.js"></script>
+<script src="{{ STATIC_URL }}/point-to-point/js/bootstrap.min.js"></script>
+<link href="{{ STATIC_URL }}/point-to-point/material/css/jquery.datetimepicker.b805db3bb426.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}/point-to-point/css/datepicker.css">
+<script type="text/javascript" src="{{ STATIC_URL }}/point-to-point/js/bootstrap-datepicker.js"></script>
+<style>
+.h4, .h5, .h6, h4, h5, h6 {
+    margin-top: 0px !important;
+    margin-bottom: 2px !important;
+}
+ .table>tbody>tr>td {
+	border: none;
+}
+ /* new style */
+
+.segment-line {
+ *zoom: 1;
+	position: relative;
+	clear: both;
+	padding: 10px 15px 0px 15px;
+	background: #fff;
+	border-left: 3px solid #0088ce;
+}
+.segment-line .time-station {
+ *zoom: 1;
+	/*padding-right: 130px;*/
+}
+.segment-line .train-specs {
+ *zoom: 1;
+	float: left;
+	clear: left;
+	margin: 0;
+	padding: 10px 0 0;
+	border-left: none;
+}
+.segment-line .carrier-logo {
+	position: absolute;
+	top: 24px;
+	right: 30px;
+	text-align: center;
+}
+.cart-ptp-tripdetails .multi-segment-pax {
+	position: relative;
+	clear: both;
+	padding: 10px 24px 0;
+	line-height: 1.375;
+}
+.segment-line .time-station div {
+	float: left;
+}
+.segment-line .time-station .time {
+	color: #0164e2;
+	font-family: "Avenir Black", Arial, Helvetica, sans-serif;
+	font-size: 15px;
+}
+.segment-line .time-station .station {
+	color: #000;
+	font-family: "Avenir Black", Arial, Helvetica, sans-serif;
+	font-size: 15px;
+}
+.segment-line .train-specs .spec.spec-duration {
+	background-position: -42px -1342px;
+}
+.segment-line .train-specs .spec {
+	padding-left: 24px;
+	background-image: url(/squelettes/assets/cws/theme/row/images/distribution/sprite-icons-set-1/sprite-icons-set-1--blue-acid.svg);
+	background-repeat: no-repeat;
+	background-size: 100px 3900px;
+}
+.segment-line .train-specs .spec {
+	float: left;
+	margin-right: 20px;
+	padding-right: 20px;
+}
+.multi-segment-pax {
+	position: relative;
+	clear: both;
+	padding: 10px 24px 0;
+	line-height: 1.375;
+}
+.md-accordion .card .card-header a:not(.collapsed) .rotate-icon {
+	-webkit-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	transform: rotate(180deg);
+	margin-top: 10px;
+}
+.panel-heading {
+    background: #f5f5f5;
+	 padding: 2px 4px !important;
+} 
+</style>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"  >
+</head>
+<body>
+<main>
+  <div class="container">
+    <div class="row" id="content">
+     <br>
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <div class="row">
+              <div class="col-xs-12 col-sm-10 col-xs-10">
+                <h4> Booking Summary </h4>
+              </div>
+            </div>
+          </div>
+          <div class="panel-body"> 
+            <!-- A PRODUCT -->
+            <div class="row" style="line-height:50px;">
+              <div class="col-md-12 col-xs-12" style="padding:0px;">
+              
+                <table class="table">
+                  <tr>
+                    <td width="40%;" style="    padding-top: 15px;" ><b> Your Reference</td>
+                    <td><input type="text" class="form-control" placeholder="123456" value="123456"></td>
+                  </tr>
+                   
+                  
+                  <tr>
+                    <td width="40%;"><b>Ticket Delivery Address</td>
+                    <td>Address1, Address2</td>
+                  </tr>
+				  <tr>
+                    <td width="40%;"><b>Notes</td>
+                    <td class="text-justify">The Interrail One Country Pass is a great choice if you want to focus on one European country only. You can then discover the country of your choice inside out!</td>
+                  </tr>
+                </table>
+                
+              </div>
+            </div>
+			  <div class="row" style="line-height:20px;">
+              <div class="col-md-12 text-left">
+                <p>You are about to confirm this booking from RailTourGuide Global Limited.</p>
+                <p><b>Please confirm that you agree to our <a href="#">terms and conditions</a> then press the Book Now button below.</b></p>
+              </div>
+            </div>
+			
+			
+			
+          </div>
+        </div>
+		
+		
+		
+		
+      </div>
+      
+	   <div class="col-md-6">
+	   
+        <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
+          <div class="card">
+            <div class="card-header" role="tab" id="headingTwo2"> <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo2"
+        aria-expanded="false" aria-controls="collapseTwo2">
+              <h5 class="mb-0" style="padding: 0px;margin: 0px;">
+                <div class="panel-heading">
+                  <div class="row">
+                    <div class="col-xs-8 col-sm-10" style="line-height:35px;"> <strong style="font-size: 18px; font-weight: 500; color:#0253a9;"> London Euston  
+                      <small><i class="fa fa-arrow-right" style="color:#000;"></i>&nbsp; </small> Manchester Piccadilly </strong> &nbsp; <br><small> <span><i class="fa fa-calendar" aria-hidden="true"></i> &nbsp; Wed. 27 Mar. 19 09:07 AM</span></small> </div>
+                    <div class="col-xs-4 col-sm-2 text-right"> <strong class="pull-left" style="position: relative;top: 10px;left: -10px;">£250.00&nbsp;</strong>
+                
+                      <i class="fas fa-angle-down rotate-icon" style="margin-top: 20px;margin-right: 30px;font-size: 20px;"></i> </div>
+                  </div>
+                </div>
+              </h5>
+              </a> </div>
+            <div id="collapseTwo2" class="collapse" role="tabpanel" aria-labelledby="headingTwo2" data-parent="#accordionEx">
+              <div class="card-body">
+			  
+			  
+			  
+                <div class="panel-body" style="background:#f5f5f5;">
+				
+				 <div style="margin-left:5px;">
+				  <div style="font-family: verdana; background:none; border:none; font-size:12px; margin:0px; padding:0px; color:#636363;"><span><i class="fa fa-user" aria-hidden="true"></i> 1 Adult</span> | <span><i class="fa fa-child" aria-hidden="true"></i> 1 Child</span> | <span><img src="point-to-point/images/class-icon.png" alt="" title="">First</span> </div>
+				 </div>
+				 
+                  <div class="segment-line" style="margin-top:10px;">
+                    <div class="time-station">
+                      <div class="departure"> <span class="time">09:07 AM</span> <span class="station">London Euston </span> </div>
+                      <div class="arrival"> &nbsp; <i class="fa fa-arrow-right" style="color:#a2a2a2;"></i>&nbsp; <span class="time"> 10:05 AM </span> <span class="station">Manchester Piccadilly </span> </div>
+                    </div>
+                    <div class="train-specs">
+                      <div class="spec spec-duration"><span class="glyphicon glyphicon-time"></span> 0h 48m </div>                      <div class="spec spec-carrier"><span class="fa fa-train"></span> SN230055 </div>
+                    </div>
+                    <div class="multi-segment-pax"></div>
+                  </div>
+                   
+                  <br>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+     <br>
+	 <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
+          <div class="card">
+            <div class="card-header" role="tab" id="headingTwo2"> <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo3"
+        aria-expanded="false" aria-controls="collapseTwo2">
+              <h5 class="mb-0" style="padding: 0px;margin: 0px;">
+                <div class="panel-heading">
+                  <div class="row">
+                    <div class="col-xs-8 col-sm-10" style="line-height:35px;"> <strong style="font-size: 18px; font-weight: 500; color:#0253a9;"> Chichester
+                      <small><i class="fa fa-arrow-right" style="color:#000;"></i>&nbsp; </small>Delamere </strong> &nbsp; <small><br> <span><i class="fa fa-calendar" aria-hidden="true"></i> &nbsp; Wed. 27 Mar. 19 09:07 AM</span></small> </div>
+                    <div class="col-xs-4 col-sm-2 text-right"> <strong class="pull-left" style="position: relative;top: 10px;left: -10px;">£240.00&nbsp;</strong>
+                     
+                      <i class="fas fa-angle-down rotate-icon pull-right" style=" margin-top: 20px;margin-right: 30px;font-size: 20px;"></i> </div>
+                  </div>
+                </div>
+              </h5>
+              </a> </div>
+            <div id="collapseTwo3" class="collapse" role="tabpanel" aria-labelledby="headingTwo2" data-parent="#accordionEx">
+              <div class="card-body">
+			  
+			  
+			  
+                <div class="panel-body" style="background:#f5f5f5;">
+				
+				 <div style="margin-left:5px;">
+				  <div style="font-family: verdana; background:none; border:none; font-size:12px; margin:0px; padding:0px; color:#636363;"><span><i class="fa fa-user" aria-hidden="true"></i> 1 Adult</span> | <span><i class="fa fa-child" aria-hidden="true"></i> 2 Child</span> | <span><img src="point-to-point/images/class-icon.png" alt="" title="">Standard</span> </div>
+				 </div>
+				 
+                  <div class="segment-line" style="margin-top:10px;">
+                    <div class="time-station">
+                      <div class="departure"> <span class="time">09:07 AM</span> <span class="station">Chichester</span> </div>
+                      <div class="arrival"> &nbsp; <i class="fa fa-arrow-right" style="color:#a2a2a2;"></i>&nbsp; <span class="time"> 10:05 AM </span> <span class="station">Southmpton Central </span> </div>
+                    </div>
+                    <div class="train-specs">
+                      <div class="spec spec-duration"><span class="glyphicon glyphicon-time"></span> 0h 58m </div>
+                      <div class="spec spec-carrier"><span class="fa fa-train"></span> SN230003 </div>
+                    </div>
+                    <div class="multi-segment-pax"></div>
+                  </div>
+                  <div style="border-left:1px dashed #0088ce; height:8px; margin-left:4px;"></div>
+                  <div class="segment-line">
+                    <div class="time-station">
+                      <div class="departure"> <span class="time">10:17 AM</span> <span class="station"> Southmpton Central </span> </div>
+                      <div class="arrival"> &nbsp; <i class="fa fa-arrow-right" style="color:#a2a2a2;"></i>&nbsp; <span class="time"> 02:13 PM </span> <span class="station">Stockport</span> </div>
+                    </div>
+                    <div class="train-specs">
+                      <div class="spec spec-duration"><span class="glyphicon glyphicon-time"></span> 3h 56m </div>
+                      <div class="spec spec-carrier"><span class="fa fa-train"></span> XC314000 </div>
+                    </div>
+                    <div class="multi-segment-pax"></div>
+                  </div>
+                  <div style="border-left: 1px dashed #0088ce; height:8px; margin-left:4px;"></div>
+                  <div class="segment-line">
+                    <div class="time-station">
+                      <div class="departure"> <span class="time">02:52 PM</span> <span class="station">Stockport</span> </div>
+                      <div class="arrival"> &nbsp; <i class="fa fa-arrow-right" style="color:#a2a2a2;"></i>&nbsp; <span class="time"> 03:52 PM </span> <span class="station">Delamere </span> </div>
+                    </div>
+                    <div class="train-specs">
+                      <div class="spec spec-duration"><span class="glyphicon glyphicon-time"></span> 1h 00m </div>
+                      <div class="spec spec-carrier"><span class="fa fa-train"></span> NT695200 </div>
+                    </div>
+                    <div class="multi-segment-pax"></div>
+                  </div>
+                  <br>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+	   
+	   
+	   
+       
+			 <br>
+		
+		 <table class="table table-bordered">
+                  
+                  <tr>
+                    <td width="77%;" class="text-right"><b> Total</td>
+                     
+					<td class="text-right"><b>£490.00</b></td>
+                  </tr>
+                  
+                 
+                  
+                </table>
+				 <br><br>
+				 <div class="col-md-12 text-center"> 
+            <input  type="checkbox"> <label>I agree to the Terms &amp; Conditions &nbsp; &nbsp; </label>
+          
+          <button type="submit" name="_submit" class="btn btn-large btn-success waves-effect green right">Book Now</button>
+		
+        
+      </div>
+      </div>
+       
+    </div>
+  </div>
+</main>
+<script type="text/javascript" src="{{ STATIC_URL }}/point-to-point/js/jquery.e40ec2161fe7.js"></script> 
+<script type="text/javascript" src="{{ STATIC_URL }}/point-to-point/js/datatables.bcf14f55a387.js"></script> 
+<script type="text/javascript" src="{{ STATIC_URL }}/point-to-point/js/materialize.90f5e15fea59.js"></script> 
+<script type="text/javascript" src="{{ STATIC_URL }}/point-to-point/js/portal.eef9d8cb6b7e.js"></script> 
+<script type="text/javascript" src="{{ STATIC_URL }}/point-to-point/js/formset.f7d6a977d248.js"></script>
+</body>
+</html>
