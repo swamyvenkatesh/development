@@ -126,6 +126,7 @@ width:100% !important;
     function removeProduct(cartId) {
       // debugger;
       console.log(cartId)
+      alert(cartId)
 
       var removeTag = document.getElementsByName("removeCart")
         removeTag[0].value = cartId;
@@ -145,7 +146,7 @@ width:100% !important;
     <!-- Data start -->
 
     {% for product in products %}
-    <form method="post" action="{% url 'check' %}">
+    <form method="post" action="{% url 'checkout_new' %}">
       {% csrf_token %}
       <input type="hidden" name="removeCart" id="removeId" value="">
     	  
@@ -249,11 +250,11 @@ function today(){
               <div id="edit-submit"> <a class="btn btn-primary"> Book Now</a>
                 <ul>
                   <li> <a href="{% url 'summary_new' %}">
-                    <button type="submit"  class="btn waves-effect purple lighten" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px) translateX(0px); opacity: 0; width:218px;"><i class="material-icons left">turned_in</i>Invoice My Company</button>
+                    <button type="button"  class="btn waves-effect purple lighten" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px) translateX(0px); opacity: 0; width:218px;"><i class="material-icons left">turned_in</i>Invoice My Company</button>
                     </a> </li>
                   <li> <a href="{% url 'summary1_new' %}">
-                    <button type="submit" class="btn waves-effect green" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px) translateX(0px); opacity: 0; width:218px;"><i class="material-icons left">credit_card</i>I'll Pay Now</button>
-                    </a> </li>
+                    <button type="button" class="btn waves-effect green" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px) translateX(0px); opacity: 0; width:218px;"><i class="material-icons left">credit_card</i>I'll Pay Now</button>
+                     </a></li>
                 </ul>
               </div>
             </div>

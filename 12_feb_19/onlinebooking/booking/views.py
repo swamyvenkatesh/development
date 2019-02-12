@@ -544,34 +544,38 @@ def traveller_info(request):
 
         # To display Cart Product details function
         cart_prod_details = getCartProductDetails(request, int(fare_ref))
-        data_from_models = cartModelsDataCreation(request, fare, fare_class, passengers_num, cart_prod_details[1],
-                                                  passengers=passengers_data)
+        # data_from_models = cartModelsDataCreation(request, fare, fare_class, passengers_num, cart_prod_details[1],passengers=passengers_data)
         # data_from_models = [CartProductDetails.objects.all()]
         trainNumber = deptStation = deptTime = arrStation = arrTime = ''
         trainCategory = fare_class
-        productDetails = data_from_models[0]
-        pro = []
-        for i in productDetails:
-            l = []
-            dict1 = {}
-            dict1['train'] = i.train
-            dict1['departure_date'] = str(i.departure_date)
-            dict1['arrival_date'] = str(i.arrival_date)
-            dict1['from_station'] = i.from_station
-            dict1['to_station'] = i.to_station
-            dict1['train_category'] = i.train_category
-            dict1['netprice'] = str(i.netprice)
-            dict1['passengers_num'] = i.passengers_num
-            dict1['id'] = i.id
-            l.append(dict1)
-            pro.append(l)
-
-        request.session['cart_products'] = pro
-        request.session['passengers_Data'] = passengers_data
-        request.session['passengers_num'] = passengers_num
-        request.session['sessionid'] = session_id
+        # productDetails = data_from_models[0]
+        # products = data_from_models[1]
+        products = CartProducts.objects.all()
+        productDetails = CartProductDetails.objects.all()
+        # pro = []
+        # for i in productDetails:
+        #     l = []
+        #     dict1 = {}
+        #     dict1['train'] = i.train
+        #     dict1['departure_date'] = str(i.departure_date)
+        #     dict1['arrival_date'] = str(i.arrival_date)
+        #     dict1['from_station'] = i.from_station
+        #     dict1['to_station'] = i.to_station
+        #     dict1['train_category'] = i.train_category
+        #     dict1['netprice'] = str(i.netprice)
+        #     dict1['passengers_num'] = i.passengers_num
+        #     dict1['id'] = i.id
+        #     l.append(dict1)
+        #     pro.append(l)
+        print "new view"
+        # request.session['products'] = products        
+        # request.session['cart_products'] = productDetails
+        # request.session['passengers_Data'] = passengers_data
+        # request.session['passengers_num'] = passengers_num
+        # request.session['sessionid'] = session_id
         request.session.modified = True
-        return HttpResponseRedirect('/alltest/checkinfo')
+        print "helo"
+        return HttpResponseRedirect('/alltest/checkinfo_new')
     else:
         session_id = request.session.get('sessionid')
         heading = no_of_adults = passport = no_of_childs = nationality = dob = countryResidence = birthPlace = age = ""
@@ -768,10 +772,10 @@ def cartModelsDataCreation(request, fare, fare_class, passengers_num, prodDetail
                 dict1.update({'age': -1})
         ll.append(dict1)
         passengers[index] = ll
-    print "-----------"*20
-    print passengers
-    return HttpResponse("test")
-    print "before insert"
+    # print "-----------"*20
+    # print passengers
+    # return HttpResponse("test")
+    # print "before insert"
 
     ##################################################################
     # New code for inserting data into db
@@ -876,10 +880,61 @@ def summary1deta(request):
 
 def checkout_new(request):
 
-    products = CartProducts.objects.all()
-    prod_details = CartProductDetails.objects.all()
+    if request.method == "POST":
+        session_id = request.session.get('sessionid')
+        if request.POST.get('removeCart'):
+            remove_cart_id = request.POST.get('removeCart').encode('utf-8')
+            delete_item = CartProductDetails.objects.get(id=remove_cart_id)
 
-    return render(request, 'booking/checkout_new.html', \
+            cartProductId = delete_item.cart_product_id
+
+            # passengers model data removal
+            CartProductPassengers.objects.filter(cart_product_id=cartProductId).delete()
+            # cart product  details model data removal
+            CartProductDetails.objects.filter(id=remove_cart_id).delete()
+            # cart product  details model data removal
+            CartProducts.objects.filter(id=cartProductId).delete()
+            productDetails = CartProductDetails.objects.all()
+            products = CartProducts.objects.all()
+
+            pro = []
+            for i in productDetails:
+                l = []
+                dict1 = {}
+                dict1['train'] = i.train
+                dict1['departure_date'] = str(i.departure_date)
+                dict1['arrival_date'] = str(i.arrival_date)
+                dict1['from_station'] = i.from_station
+                dict1['to_station'] = i.to_station
+                dict1['train_category'] = i.train_category
+                dict1['netprice'] = str(i.netprice)
+                dict1['passengers_num'] = i.passengers_num
+                dict1['id'] = int(i.id)
+
+                l.append(dict1)
+                pro.append(l)
+
+            request.session['cart_products'] = pro
+            request.session['products'] = products
+            request.session.modified = True
+            print"4444"
+            # return HttpResponseRedirect("/alltest/checkinfo_new")
+        else:
+            print "33333"
+            return HttpResponseRedirect("/alltest/checkinfo_new")
+
+
+
+    else:
+        print "$$$$$"
+        print "new elseo"
+
+        session_id = request.session.get('sessionid')
+
+        products = CartProducts.objects.all()
+        prod_details = CartProductDetails.objects.all()
+
+        return render(request, 'booking/checkout_new.html', \
         {'products':products, 'prod_details':prod_details})
 
 
