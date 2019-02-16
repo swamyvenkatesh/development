@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>CheckOut</title>
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="{{ STATIC_URL }}/point-to-point/material/fonts/material-design-icons/material-icons.61bc1caf7f45.css" rel="stylesheet">
+<link href="{{ STATIC_URL }}/point-to-point/material/css/materialize.525710e1314c.css" rel="stylesheet">
+<link href="{{ STATIC_URL }}/point-to-point/material/css/jquery.datetimepicker.b805db3bb426.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}/point-to-point/css/portal.c2bfd6b9cc10.css">
+<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}/point-to-point/css/styles.css">
+<link rel="stylesheet" href="{{ STATIC_URL }}/point-to-point/css/bootstrap.min.css">
+<script src="{{ STATIC_URL }}/point-to-point/js/jquery.min.js"></script>
+<script src="{{ STATIC_URL }}/point-to-point/js/bootstrap.min.js"></script>
+<link href="{{ STATIC_URL }}/point-to-point/material/css/jquery.datetimepicker.b805db3bb426.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}/point-to-point/css/datepicker.css">
+<script type="text/javascript" src="{{ STATIC_URL }}/point-to-point/js/bootstrap-datepicker.js"></script>
+<style>
+
+@media (max-width="768px")
+{
+.container
+{
+width:100% !important;
+}
+
+
+
+}
+
+
+.image {
+	background: url({{ STATIC_URL }}/point-to-point/images/cal1.png) no-repeat;
+	background-position: 100% 80%;
+}
+.row {
+	margin-bottom: 5px;
+}
+.table>tbody>tr>td {
+	border: none;
+}
+/* new style */
+
+.segment-line {
+ *zoom: 1;
+	position: relative;
+	clear: both;
+	padding: 10px 15px 0px 15px;
+	background: #fff;
+	border-left: 3px solid #0088ce;
+}
+.segment-line .time-station {
+ *zoom: 1;
+	padding-right: 130px;
+}
+.segment-line .train-specs {
+ *zoom: 1;
+	float: left;
+	clear: left;
+	margin: 0;
+	padding: 10px 0 0;
+	border-left: none;
+}
+.segment-line .carrier-logo {
+	position: absolute;
+	top: 24px;
+	right: 30px;
+	text-align: center;
+}
+.cart-ptp-tripdetails .multi-segment-pax {
+	position: relative;
+	clear: both;
+	padding: 10px 24px 0;
+	line-height: 1.375;
+}
+.segment-line .time-station div {
+	float: left;
+}
+.segment-line .time-station .time {
+	color: #0164e2;
+	font-family: "Avenir Black", Arial, Helvetica, sans-serif;
+	font-size: 15px;
+}
+.segment-line .time-station .station {
+	color: #000;
+	font-family: "Avenir Black", Arial, Helvetica, sans-serif;
+	font-size: 15px;
+}
+.segment-line .train-specs .spec.spec-duration {
+	background-position: -42px -1342px;
+}
+.segment-line .train-specs .spec {
+	padding-left: 24px;
+	background-image: url(/squelettes/assets/cws/theme/row/images/distribution/sprite-icons-set-1/sprite-icons-set-1--blue-acid.svg);
+	background-repeat: no-repeat;
+	background-size: 100px 3900px;
+}
+.segment-line .train-specs .spec {
+	float: left;
+	margin-right: 20px;
+	padding-right: 20px;
+}
+.multi-segment-pax {
+	position: relative;
+	clear: both;
+	padding: 10px 24px 0;
+	line-height: 1.375;
+}
+.md-accordion .card .card-header a:not(.collapsed) .rotate-icon {
+	-webkit-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	transform: rotate(180deg);
+	margin-top: 10px;
+}
+.panel-heading {
+    background: #f5f5f5;
+	 padding: 2px 4px !important;
+} 
+   
+</style>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"  >
+
+<script >
+    function removeProduct(cartId) {
+      // debugger;
+      console.log(cartId)
+      // alert(cartId)
+
+      var removeTag = document.getElementsByName("removeCart")
+        removeTag[0].value = cartId;
+      document.forms[0].submit();
+    }
+
+
+</script>
+
+</head>
+<body>
+<main><br>
+  <div class="container">
+    <div class="row" >  
+
+	  
+    <!-- Data start -->
+
+
+    {% for product in products %}
+    <form method="post" action="{% url 'checkout_new' %}">
+      {% csrf_token %}
+      <input type="hidden" name="removeCart" id="removeId" value="">
+    	  
+	  <div class="col-md-12">
+        <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
+          <div class="card">
+            <div class="card-header" role="tab" id="headingTwo2"> <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo{{product.id}}"
+        aria-expanded="false" aria-controls="collapseTwo2">
+              <h5 class="mb-0" style="padding: 0px;margin: 0px;">
+                <div class="panel-heading">
+                  <div class="row">
+                    <div class="col-xs-8 col-sm-10" style="line-height:35px;"> <strong style="font-size: 18px; font-weight: 500; color:#0253a9;"> {{product.product_name}}
+                      <!-- <small><i class="fa fa-arrow-right" style="color:#000;"></i>&nbsp; </small>Delamere </strong> --> &nbsp; <small> <span><i class="fa fa-calendar" aria-hidden="true"></i> {{product.start_date|date:"D. d M. Y"}}</span></small> 
+                    </div>
+                    <div class="col-xs-4 col-sm-2 text-right"> <strong class="pull-left" style="position: relative;top: 10px;left: -10px;">£{{product.netprice}}&nbsp;</strong>
+                      <button title="Remove item from the cart" class=" btn btn-sm btn-default button-remove pull-left" onclick="javascript:removeProduct('{{ product.id }}');"> <span class="glyphicon glyphicon-trash"></span> </button>
+                      <i class="fas fa-angle-down rotate-icon pull-right" style=" margin-top: 10px;font-size: 20px;"></i> </div>
+                  </div>
+                </div>
+              </h5>
+              </a> </div>
+            <div id="collapseTwo{{product.id}}" class="collapse" role="tabpanel" aria-labelledby="headingTwo2" data-parent="#accordionEx">
+              <div class="card-body">
+			  
+			  
+			  
+                <div class="panel-body" style="background:#f5f5f5;">
+				
+      				 <div style="margin-left:5px;">
+      				  <div style="font-family: verdana; background:none; border:none; font-size:12px; margin:0px; padding:0px; color:#636363;"><span><i class="fa fa-user" aria-hidden="true"></i> {{adult_count}} Adult</span> | <span><i class="fa fa-child" aria-hidden="true"></i> {{child_count}} Child</span> | <span><img src="point-to-point/images/class-icon.png" alt="" title="">{{product.service}}</span> </div>
+      				 </div>
+
+               {% for pro_det in prod_details %}
+               
+
+               {% if product.id == pro_det.cart_product_id %}
+				 
+                <div class="segment-line" style="margin-top:10px;">
+                  <div class="time-station">
+                    <div class="departure"> <span class="time">{{pro_det.departure_date|date:"h:i A "   }}</span> <span class="station">{{pro_det.from_station}}</span> </div>
+                        <div class="arrival"> &nbsp; <i class="fa fa-arrow-right" style="color:#a2a2a2;"></i>&nbsp; <span class="time"> {{pro_det.arrival_date|date:"h:i A "}} </span> <span class="station">{{pro_det.to_station}} </span> </div>
+                      </div>
+                      <div class="train-specs">
+                        <div class="spec spec-duration"><span class="glyphicon glyphicon-time"></span> 0h 58m </div>
+                        <div class="spec spec-carrier"><span class="fa fa-train"></span> {{pro_det.train}} </div>
+                      </div>
+                      <div class="multi-segment-pax"></div>
+                    </div>
+                  <div style="border-left:1px dashed #0088ce; height:8px; margin-left:4px;"></div>
+                {% endif %}
+                {% endfor %}
+                  
+                  <br>
+                </div>
+                <!-- panel body -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	  
+    </form>
+    {% endfor %}
+	  
+	  
+      <!-- Data ending -->
+
+
+      <div class="col-md-12" style="margin-top:20px;">
+        <div class="row">
+          <div class="col-md-4">
+            <input type="text" class="form-control" placeholder="Your Reference">
+          </div>
+          <div class="col-md-2">
+            <input type="text" value ="" id="datepicker" class="image" placeholder="Start date"/>
+            <script>
+	  $('#datepicker').datepicker();
+function today(){
+    var d = new Date();
+    var curr_date = d.getDate();
+    var curr_month = d.getMonth() + 1;
+    var curr_year = d.getFullYear();
+    document.write(curr_date + "-" + curr_month + "-" + curr_year);
+}
+</script> 
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12" style="padding-top:10px;">
+        <div class="row">
+          <div class="col-md-4">
+            <textarea class="materialize-textarea" cols="40" rows="10" style="height: 45px;" placeholder="Ticket Delivery Address"></textarea>
+          </div>
+          <div class="col-md-8">
+            <textarea class="materialize-textarea" cols="40" rows="10" style="height: 45px;" placeholder="Notes"></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-xs-12 pull-right">
+            <div class="fixed-action-btn text-right">
+              <div id="edit-submit"> <a class="btn btn-primary"> Book Now</a>
+                <ul>
+                  <li> <a href="{% url 'summary_new' %}">
+                    <button type="button"  class="btn waves-effect purple lighten" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px) translateX(0px); opacity: 0; width:218px;"><i class="material-icons left">turned_in</i>Invoice My Company</button>
+                    </a> </li>
+                  <li> <a href="{% url 'summary1_new' %}">
+                    <button type="button" class="btn waves-effect green" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px) translateX(0px); opacity: 0; width:218px;"><i class="material-icons left">credit_card</i>I'll Pay Now</button>
+                     </a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<script type="text/javascript" src="{{ STATIC_URL }}/point-to-point/js/jquery.e40ec2161fe7.js"></script> 
+<script type="text/javascript" src="{{ STATIC_URL }}/point-to-point/js/datatables.bcf14f55a387.js"></script> 
+<script type="text/javascript" src="{{ STATIC_URL }}/point-to-point/js/materialize.90f5e15fea59.js"></script> 
+<script type="text/javascript" src="{{ STATIC_URL }}/point-to-point/js/portal.eef9d8cb6b7e.js"></script> 
+<script type="text/javascript" src="{{ STATIC_URL }}/point-to-point/js/formset.f7d6a977d248.js"></script>
+</body>
+</html>
