@@ -1,0 +1,131 @@
+<ACP_RailBookRQ EchoToken="7656" Target="Production" Version="1.002" SequenceNmbr="1" PrimaryLangID="en" xmlns="http://www.acprailinternational.com/API/R2">
+  <POS>
+    <RequestorID>RTG-XML</RequestorID>
+  </POS>
+  <RailBookInfo>
+    <SelectedOptions>
+      <SelectedOption TicketOption="Etk" IsCreditSale="true" ID="1">
+      
+        <!-- Start Selected Fare XML from Availability, check the attached Availability response XML -->
+      
+        <ODFare FareReference="3" Class="First" IsEstimated="false" IsPreBookable="false" TicketingTimeLimit="2019-02-17T23:59:59.0Z" TicketCount="1" CurrencyCode="GBP" ItineraryType="One-Way-Outbound" IncludesProtectionPlan="false" ReservationRequired="true" ProductName="TICKET on DEPARTURE -ANYTIME via:ANY PERMITTED - Travel is allowed via any permitted route." RouteDescription="ANY PERMITTED - Travel is allowed via any permitted route." FareType="Regular" Magic="AAA2C54A90E9639B983DF6F503D88A15
+	789C6D50C94EC33010BDCF57047A4EE5B5B173F3168903089472AA72481B0B05
+	A571D5180442FC3B6E8A1045583EBD99B7CC5B6CC2F6D9EFE255B681A33F0C79
+	E8C221F6619CCA6CD340DB757F90FA30F431BF3FF63B5F668B5FEC7588EDF00F
+	5EB5C7849055B144B0AE4D99A165016A1F5EC678860B3061BFEFA72979949958
+	220C77FE34E372B99250FBE36B12ADBC3F5111340DDCB76FD6C7B61F2E9DEA21
+	EDDDD832C349B14BEBD7CAAEAFA17D9A138D61F40D3CBCB463ECE3FB69E971EC
+	E377E03FF1E65B66B9CBA07575F64D557C2C3EA010D2702A9C71AC328A296689
+	E3983321DC0A29638D26A6C0C6918A388D39A188128A2DA1D421443406699916
+	5A286A84AEA8B49C2A839964D6488B884C434198461AA9825092AC3443922887
+	B99158320C0C392E560C19AEB1C60809E6282E649548F383CF4FB8EDDF7E526F
+	72DC40BE0BD3E92446D2CDF9B69D7EF59377DB69982BC117CD137EAE7EFE5F4F
+	859D2B35020000
+	" UseAfterTL="2019-02-28" UseByTL="2019-02-27" TravelDate="2019-02-28" PaxUnits="1" PricingOnRequest="false" BookingOnRequest="false" TicketOption="ETK" PassportRequired="false" DateOfBirthRequired="false" PaxNameRequested="true" CntryResidenceRequired="false" NationalityRequired="false" PlaceOfBirthRequired="false" EmailRequired="false" TicketType="TicketAndReser">
+	            
+	            <PassengerTypePrices>
+	                <PassengerMixSlice SliceID="1" Code="ADT" Quantity="1" UnitPrice="267.00" TSC="0.70" TotalSliceAmount="267.70" SFDetails="#{
+	789C538ECE4FCA4A4D2E515488E60ACDCB2C71CE2F2EB152303231D233E002B1
+	9D4B8B8A3C8BF39D53AC1494DC9D0294B8824B0B0A7232538B4092AE15C91941
+	40E58640C5B1B10084E3179F4B000000
+	}">
+	                    <MixDetails>
+	                        <PassengerPlaceholder Age="-1"/>
+	                    </MixDetails>
+	                </PassengerMixSlice>
+	            </PassengerTypePrices>
+	            <TotalPrice Fare="267.00" TSC="0.70" Amount="267.70" Commission="8.01" Net="259.69" ServiceFee="25.0"/>
+	            <OriginLocation LocationCode="7000021" Name="London Euston" Country="GB"/>
+	            <DestinationLocation LocationCode="7000046" Name="Manchester Piccadilly" Country="GB"/>
+	            <SubComponents/>
+	            <IntegratedTotalPrice Fare="267.00" TSC="0.70" Amount="267.70" Commission="8.01" Net="259.69" ServiceFee="25.0"/>
+	            <IntegratedPassengerTypePrices>
+	                <PassengerMixSlice SliceID="1" Code="ADT" Quantity="1" UnitPrice="267.00" TSC="0.70" TotalSliceAmount="267.70" SFDetails="#{
+	789C538ECE4FCA4A4D2E515488E60ACDCB2C71CE2F2EB152303231D233E002B1
+	9D4B8B8A3C8BF39D53AC1494DC9D0294B8824B0B0A7232538B4092AE15C91941
+	40E58640C5B1B10084E3179F4B000000
+	}">
+	                    <MixDetails>
+	                        <PassengerPlaceholder Age="-1"/>
+	                    </MixDetails>
+	                </PassengerMixSlice>
+	            </IntegratedPassengerTypePrices>
+	            <PossiblePlacePrefs>
+	                <PossibleSpecialRequests>
+	                    <SpecialRequest>Unspecified</SpecialRequest>
+	                </PossibleSpecialRequests>
+	                <PossibleCompartmentTypes>
+	                    <CompartmentType>Unspecified</CompartmentType>
+	                </PossibleCompartmentTypes>
+	                <PossiblePositions>
+	                    <Position>Unspecified</Position>
+	                </PossiblePositions>
+	            </PossiblePlacePrefs>
+	             <ProdMarketingName>&lt;div id="DisplayName"&gt;TICKET on DEPARTURE-ANYTIME&lt;/div&gt;</ProdMarketingName>
+	            <SalesConditions RefundPolicy="Non-Refundable">
+	                <TermsAndConditions MustAcknowledge="true" URL="https://www.acpsecrets.com/railways-terms-and-conditions/TTL-tod-ow-withres-anytime.html"/>
+	                <RefundRules>
+	                    <RefundRule Sequence="1" DateBasis="Issue" WithinDateBasis="P0D" PenaltyRate="100.0" MinimumPenalty="0.0"/>
+	                </RefundRules>
+	            </SalesConditions>
+        </ODFare>
+        
+        <!-- End Selected Fare XML from Availability -->
+        
+        
+        <OriginDestinationOption>
+        
+        <!-- This is the exact XML for selected Journey from Availability response XML -->
+        
+         <Journey JourneyDuration="PT2H6M" IsSubComponent="false">
+	                     <OriginLocation LocationCode="7000021" Name="London Euston" Country="GB"/>
+	                     <DestinationLocation LocationCode="7000046" Name="Manchester Piccadilly" Country="GB"/>
+	                     <JourneySegments>
+	                         <JourneySegment>
+	                             <TrainSegment DepartureDateTime="2019-02-28T09:40:00" ArrivalDateTime="2019-02-28T11:46:00" TrainNumber="0940" JourneyDuration="PT2H6M" TrainServiceType="Train" CrossBorder="false" OperatorName="ATOC">
+	                                 <DepartureStation LocationCode="7000021" Name="London Euston" Country="GB"/>
+	                                 <ArrivalStation LocationCode="7000046" Name="Manchester Piccadilly" Country="GB"/>
+	                                 <RailAmenities>
+	                                     <RailAmenity Name="VT"/>
+	                                 </RailAmenities>
+	                                 <ClassCodes/>
+	                             </TrainSegment>
+	                         </JourneySegment>
+	                     </JourneySegments>
+	                     <FareRPHs>
+	                         <FareRPH>3</FareRPH>
+	                         <FareRPH>4</FareRPH>
+	                         <FareRPH>5</FareRPH>
+	                         <FareRPH>6</FareRPH>
+	                     </FareRPHs>
+                </Journey>
+        <!-- End Journey XML -->
+        
+          <PlacePrefs/>
+        </OriginDestinationOption>
+        
+       <!-- This is the Passenger Information --> 
+        <PassengerIndex>
+          <Passenger PassengerID="1" SliceID="1"/>
+        </PassengerIndex>
+       
+       <!-- End the Passenger Information -->
+       
+        <PaymentIndex/>
+      </SelectedOption>
+
+    </SelectedOptions>
+    
+    <Payments/>
+    
+    <!-- Passenger details from Database -->
+    
+    <Passengers>
+      <Passenger ID="1" NamePrefix="Mr" GivenName="Test" Surname="Test" Age="-1" CountryResidence="" Nationality="" PlaceOfBirthCity="" PlaceOfBirthCountry="" PassportNumber="" DayOfBirth="Day" MonthOfBirth="Month" YearOfBirth="Year" IsLeader="true"/>
+    </Passengers>
+    
+    <!-- End Passenger details from Database -->
+    
+    <Remarks/>
+  </RailBookInfo>
+</ACP_RailBookRQ>

@@ -1,0 +1,227 @@
+
+
+
+
+
+There are lot of issues 
+
+1. You are still storing fare data in .txt file. You should remove and get the data from session.(Done)
+
+
+def getCartProductDetails(ref):
+    """
+        Cart Product Details Data (For displaying purpose only)
+    """
+    print "GEt Details"
+
+    result_list_data = []
+    with open(os.path.join(settings.MEDIA_ROOT, "result_list.txt"), 'r') as file1:
+        result_list_data = pickle.load(file1)
+
+    dic = {}
+    for i in result_list_data:
+        for j1, j2 in i.items():
+            if j1 == 'fareRPHS_List':
+                j2 = [int(x.encode('utf-8')) for x in j2]
+                if ref in j2:
+                    dic[ref] = i['journey_details']
+                else:
+                    pass
+    data = {}
+    for i in dic[ref]:
+        data = i
+
+    return data
+
+
+2. For every ticket, Its adding 4 records in database (all the tables) everytime with different sessionID.(Done)
+
+3. In cart_productdetails, You need to get the departure and arrival dates from the selected train.(Done)
+
+
+  <TrainSegment DepartureDateTime="2019-02-27T08:20:00" ArrivalDateTime="2019-02-27T10:27:00" TrainNumber="0820" JourneyDuration="PT2H7M" TrainServiceType="Train" CrossBorder="false" OperatorName="ATOC">
+                                <DepartureStation LocationCode="7000021" Name="London Euston" Country="GB"/>
+                                <ArrivalStation LocationCode="7000046" Name="Manchester Piccadilly" Country="GB"/>
+                                <RailAmenities>
+                                    <RailAmenity Name="VT"/>
+                                </RailAmenities>
+                                <ClassCodes/>
+                            </TrainSegment>
+
+
+4. I see 404 error on ajax call..(Done)
+
+Not Found: /alltest/child_ages/
+[05/Feb/2019 16:00:47] "GET /alltest/child_ages/?child_passenger_ages%5B%5D=15 HTTP/1.1" 404 3259
+
+5. LogDNA integration for logging : we need this if there is no response from API, We will not know the issue.(Pending)
+
+
+
+
+
+
+=========================================
+
+
+I see that in the code, you are capturing only paasport, dob and nationality but we need to capture below fields(pendinging).
+
+ 
+
+PassportRequired="false"
+
+DateOfBirthRequired="false"  -  date field
+
+CntryResidenceRequired="false"  à countries dorp down
+
+NationalityRequired="false"  à countries drop down
+
+PlaceOfBirthRequired="false" à text field.
+
+Also on the checkout page, You need to get ticket details from Data base not from session. 
+
+Creating session with uuid in search results only if its not created already so that we can add multiple tickets to the shopping cart. This allows us to add multiple tickets to the Cart.(Done)
+
+Add button “continue shopping” on checkout page. This will link to the index page.(Done)
+
+======================================================
+
+
+
+
+
+You will not be storing sessions in DB...
+
+ 
+
+    All you have to do is on search results view to create session and set it in session if its not exists already.
+
+ 
+
+If request.session.get ("sessionid”) is None:
+    uuid_id = str(uuid.uuid4())
+    print uuid_id
+   request.session[‘sessionid’] = uuid_id
+
+    # print str(uuid.uuid4())
+    print "-----"*20
+    print request.session.session_key
+"
+
+ 
+
+    Yes you can add multiple tickets to the cart under same sessionid. If the request.session[“sessionid”] does not exist then you will create a uuid and set it in session. Same code above .
+    -- When clicking on Continue Shopping button on checkout page , it will redirect to index page. we can able to search for new trains then and you will create new session only if it doesn’t exist  and 2nd ticket will be added under the same sessionid.
+
+ 
+
+    same code above
+
+ 
+
+    on Checkout page, You need to retrieve cart data and other data from database will be retrived based on sessionid (request.sesssion[“sessionid”]
+
+ 
+
+    When you delete the product on checkout page by clicking “delete” button then you will delete that ticket info from Database based on sessionid and cartid.(Done)
+
+
+11572865-87aa-4394-b7ab-9c8266e3065d
+
+=========================================================================================
+
+
+
+    This code should be in loop to insert multi journeysegments if the route contains multiple journeysegment trains..(DOne)
+
+ 
+
+Check  chichster to Delamere where you get multiple journeysegments. Attached is the screenshot.
+
+ 
+
+ 
+
+   productDetails = CartProductDetails.objects.create(
+
+        cart_product_id=cartProductId, from_station=str(prodDetails['dept_station']),
+
+        to_station=str(prodDetails['arr_station']), from_code=str(prodDetails['dept_station_code']),
+
+        to_code=str(prodDetails['arr_station_code']),
+
+        departure_date=depDateTime, arrival_date=arrDateTime, train=str(prodDetails['train']),
+
+        train_category=str(fare_class))
+
+ 
+
+    In Attached the 2nd screenshot, Destination is wrong. Destinatin should be displayed as Delamere ( you should always take the To station from last segment in the JourneySegments) (Done)
+
+ 
+
+ 
+
+    In the latest models file I sent you new fields were added. Please make sure you have updated these files.(Done)
+
+ 
+
+
+  product_name à insert  From station – To station (for e.g. London St Pancras Int - Paris Nord) (Done)
+
+    fare à Name of the Fare (Done)
+
+    service à Class
+
+    Rule à Sale condition -- (Done)
+
+    start_date à DepartureDate (pending)
+
+    passengers_num à Total Number of Passengers
+
+    status = 0
+
+    settlementprice à Gross Price 
+
+
+=-==================================================================
+
+Most of the stuff looks OK.. I found one scenario where duration is calculating wrong.
+
+Can you add the sales condition icon and description on mouseover?
+
+when there are multi trains.... Always "To City" should be from the last train. See the screenshots.(Done)
+
+============================================================    feb 11th    ======================================================
+
+There was an error while inserting data into database same error as I sent you on friday... I have updated views.py and please use the latest views.py
+
+
+1. SaleCondition icon on tickets page not working.(need yo check)
+
+2. SaleCondtions -- Hardcoded while inserting in database(pending)
+
+3. cartProductPassengers -- Child Age is not inserting.. Its inserting as -1()
+
+4. checkout page -- Chichester to Delamere is one product but you are displaying this as multiple products... I think UI needs to be changed .
+(Need to ask )
+
+==================================================================================================
+								16th Feb 2019
+====================================================================================================
+Please fix these issues.
+
+1. If there is a record in cart model for that particular session, then we should not create record again .. we just need to use the existing cart object
+
+
+2. check out page -- You are showing data from session before storing data into cart models.  But you have to storing data then  you need to get all the product details based on session id from tables cart, cartproducts, cartproductdetails and cartproductpassengers.
+
+same issue when you delete cart object, once you delete product from cart tables, you need to retrive data based on session and display on the page.
+
+3. summary1 and summary2 -- same issues you have to get the data from database based on sessionid, currently you are all the data from cart objects and displaying.
+
+4. Check Paris to Venice , Duration showing wrong on ticket page, because when you calculate duration, you shoud take into account Arrivaldatetime and Departuredatetime. You are only considering  times which will be wrong for Night trains.
+
+
+
+ 

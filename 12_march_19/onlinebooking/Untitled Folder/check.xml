@@ -1,0 +1,1052 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ACP_RailAvailRS ResponseType="Native-Availability"
+	xmlns="http://www.acprailinternational.com/API/R2"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.acprailinternational.com/API/R2 ACP_RailAvailRS.xsd" Version="1.001" TimeStamp="2019-02-28T15:11:25" Target="Production">
+	<Success/>
+	<OriginDestinationOptions>
+		<OriginDestinationOption OptionReference="1" IsSubComponent="false">
+			<OriginLocation LocationCode="7015400" Name="London St Pancras Int" Country="GB"/>
+			<DestinationLocation LocationCode="8700015" Name="Paris Nord" Country="FR"/>
+			<Journeys>
+				<Journey JourneyDuration="PT2H25M" IsSubComponent="false">
+					<OriginLocation LocationCode="7015400" Name="London St Pancras Int" Country="GB"/>
+					<DestinationLocation LocationCode="8700015" Name="Paris Nord" Country="FR"/>
+					<JourneySegments>
+						<JourneySegment>
+							<TrainSegment DepartureDateTime="2019-03-20T09:22:00" ArrivalDateTime="2019-03-20T12:47:00" TrainNumber="9014" JourneyDuration="PT2H25M" TrainServiceType="Regular" CrossBorder="true" ReservationMode="Required" OperatorName="EUROSTAR">
+								<DepartureStation LocationCode="7015400" Name="London St Pancras Int" Country="GB"/>
+								<ArrivalStation LocationCode="8700015" Name="Paris Nord" Country="FR"/>
+								<ClassCodes/>
+							</TrainSegment>
+						</JourneySegment>
+					</JourneySegments>
+					<FareRPHs>
+						<FareRPH>1</FareRPH>
+						<FareRPH>2</FareRPH>
+						<FareRPH>3</FareRPH>
+					</FareRPHs>
+				</Journey>
+				<Journey JourneyDuration="PT2H23M" IsSubComponent="false">
+					<OriginLocation LocationCode="7015400" Name="London St Pancras Int" Country="GB"/>
+					<DestinationLocation LocationCode="8700015" Name="Paris Nord" Country="FR"/>
+					<JourneySegments>
+						<JourneySegment>
+							<TrainSegment DepartureDateTime="2019-03-20T10:24:00" ArrivalDateTime="2019-03-20T13:47:00" TrainNumber="9018" JourneyDuration="PT2H23M" TrainServiceType="Regular" CrossBorder="true" ReservationMode="Required" OperatorName="EUROSTAR">
+								<DepartureStation LocationCode="7015400" Name="London St Pancras Int" Country="GB"/>
+								<ArrivalStation LocationCode="8700015" Name="Paris Nord" Country="FR"/>
+								<ClassCodes/>
+							</TrainSegment>
+						</JourneySegment>
+					</JourneySegments>
+					<FareRPHs>
+						<FareRPH>4</FareRPH>
+						<FareRPH>5</FareRPH>
+						<FareRPH>6</FareRPH>
+					</FareRPHs>
+				</Journey>
+				<Journey JourneyDuration="PT2H23M" IsSubComponent="false">
+					<OriginLocation LocationCode="7015400" Name="London St Pancras Int" Country="GB"/>
+					<DestinationLocation LocationCode="8700015" Name="Paris Nord" Country="FR"/>
+					<JourneySegments>
+						<JourneySegment>
+							<TrainSegment DepartureDateTime="2019-03-20T12:24:00" ArrivalDateTime="2019-03-20T15:47:00" TrainNumber="9024" JourneyDuration="PT2H23M" TrainServiceType="Regular" CrossBorder="true" ReservationMode="Required" OperatorName="EUROSTAR">
+								<DepartureStation LocationCode="7015400" Name="London St Pancras Int" Country="GB"/>
+								<ArrivalStation LocationCode="8700015" Name="Paris Nord" Country="FR"/>
+								<ClassCodes/>
+							</TrainSegment>
+						</JourneySegment>
+					</JourneySegments>
+					<FareRPHs>
+						<FareRPH>7</FareRPH>
+						<FareRPH>8</FareRPH>
+						<FareRPH>9</FareRPH>
+					</FareRPHs>
+				</Journey>
+				<Journey JourneyDuration="PT2H16M" IsSubComponent="false">
+					<OriginLocation LocationCode="7015400" Name="London St Pancras Int" Country="GB"/>
+					<DestinationLocation LocationCode="8700015" Name="Paris Nord" Country="FR"/>
+					<JourneySegments>
+						<JourneySegment>
+							<TrainSegment DepartureDateTime="2019-03-20T13:31:00" ArrivalDateTime="2019-03-20T16:47:00" TrainNumber="9028" JourneyDuration="PT2H16M" TrainServiceType="Regular" CrossBorder="true" ReservationMode="Required" OperatorName="EUROSTAR">
+								<DepartureStation LocationCode="7015400" Name="London St Pancras Int" Country="GB"/>
+								<ArrivalStation LocationCode="8700015" Name="Paris Nord" Country="FR"/>
+								<ClassCodes/>
+							</TrainSegment>
+						</JourneySegment>
+					</JourneySegments>
+					<FareRPHs>
+						<FareRPH>10</FareRPH>
+						<FareRPH>11</FareRPH>
+						<FareRPH>12</FareRPH>
+					</FareRPHs>
+				</Journey>
+				<Journey JourneyDuration="PT2H25M" IsSubComponent="false">
+					<OriginLocation LocationCode="7015400" Name="London St Pancras Int" Country="GB"/>
+					<DestinationLocation LocationCode="8700015" Name="Paris Nord" Country="FR"/>
+					<JourneySegments>
+						<JourneySegment>
+							<TrainSegment DepartureDateTime="2019-03-20T14:22:00" ArrivalDateTime="2019-03-20T17:47:00" TrainNumber="9032" JourneyDuration="PT2H25M" TrainServiceType="Regular" CrossBorder="true" ReservationMode="Required" OperatorName="EUROSTAR">
+								<DepartureStation LocationCode="7015400" Name="London St Pancras Int" Country="GB"/>
+								<ArrivalStation LocationCode="8700015" Name="Paris Nord" Country="FR"/>
+								<ClassCodes/>
+							</TrainSegment>
+						</JourneySegment>
+					</JourneySegments>
+					<FareRPHs>
+						<FareRPH>13</FareRPH>
+						<FareRPH>14</FareRPH>
+						<FareRPH>15</FareRPH>
+					</FareRPHs>
+				</Journey>
+			</Journeys>
+		</OriginDestinationOption>
+	</OriginDestinationOptions>
+	<Fares>
+		<Fare FareReference="1" Class="Semi flex (BY) - Standard" IsEstimated="false" IsPreBookable="true" TicketingTimeLimit="2019-03-16T23:59:59.0Z" TicketCount="1" CurrencyCode="GBP" ItineraryType="One-Way-Outbound" IncludesProtectionPlan="false" ReservationRequired="true" ProductName="Eurostar E-TICKET AND RESERVATION SEMI FLEXIBLE" FareType="Regular" Magic="AFF45B0D044DBC84B1344ECBD979A096
+789C6D51CB6EDB3010BCEF57A8F159C2F22591BEF1210139344821F764E8205B
+44A040160D8B291204F9F7D26A51C445883DCDEECECC0E37FB7078F6C7F82DDB
+C3C59FA73C0CE11CC7302FDB6CDF413F0CFF21ED791A63FE78198F7E9B6D3E6D
+EF42ECA72FF0A6BF2484AB0261D7DA6D864505FA145EE6B8A215D8703A8DCB92
+14B6192978050FFEDA920565D0FACBAFC4D8787F5D44E83A78EC5F9D8FFD38DD
+CAB4539ABB778922110E69FC4EBBDD1DF44FAB9D39CCBE831F2FFD1CC7F8761D
+FA398FF1AFDB5B6FEB1D2BDB8DCBB6F9A39A5278DFBC432595154CD6B6E68DD5
+5C73476B410497B22E515B670DB515B1356D686D88A00C9970C8582D9032A21C
+70238DD4CC4AD330E504D39670C59D550EA94A4D49B94183BAA28C2621C35151
+5D136115519C700427B0ACB42AB194A52D8535C41044639821121D77B83EF8F8
+80EFE3EB3FEFFB9C74901FC392EE125808C80FFDF229A27C382CD39A0AB9099F
+155C7226AE1FB0D66F81869E0538020000
+" UseAfterTL="2019-03-20" UseByTL="2019-03-19" TravelDate="2019-03-20" PaxUnits="1" PricingOnRequest="false" BookingOnRequest="false" TicketOption="ETK" PassportRequired="false" DateOfBirthRequired="false" PaxNameRequested="true" CntryResidenceRequired="false" NationalityRequired="false" PlaceOfBirthRequired="false" EmailRequired="true" TicketType="TicketAndReser">
+			<ProdMarketingName>
+				<![CDATA[<div id="DisplayName">Eurostar E-Ticket and Reservation Semi Flexible</div>]]>
+			</ProdMarketingName>
+			<PassengerTypePrices>
+				<PassengerMixSlice SliceID="1" Code="ADT" Quantity="1" UnitPrice="49.00" TSC="0.70" TotalSliceAmount="49.70" SFDetails="#{
+789C538ECE4FCA4A4D2E515488E60ACDCB2C71CE2F2EB1523035D033E502319D
+4B8B8A3C8BF39D53AC1494DC9D0294B8824B0B0A7232538B4092AE15C9194140
+D5067A960686C65CB1B100BB3B180D4D000000
+}">
+					<MixDetails>
+						<PassengerPlaceholder Age="-1"/>
+					</MixDetails>
+				</PassengerMixSlice>
+			</PassengerTypePrices>
+			<TotalPrice Fare="49.00" TSC="0.70" Amount="49.70" Commission="1.47" Net="48.23" ServiceFee="3.48435"/>
+			<OriginLocation LocationCode="7015400" Name="London St Pancras Int" Country="GB"/>
+			<DestinationLocation LocationCode="8700015" Name="Paris Nord" Country="FR"/>
+			<SubComponents/>
+			<IntegratedTotalPrice Fare="49.00" TSC="0.70" Amount="49.70" Commission="1.47" Net="48.23" ServiceFee="3.48435"/>
+			<IntegratedPassengerTypePrices>
+				<PassengerMixSlice SliceID="1" Code="ADT" Quantity="1" UnitPrice="49.00" TSC="0.70" TotalSliceAmount="49.70" SFDetails="#{
+789C538ECE4FCA4A4D2E515488E60ACDCB2C71CE2F2EB1523035D033E502319D
+4B8B8A3C8BF39D53AC1494DC9D0294B8824B0B0A7232538B4092AE15C9194140
+D5067A960686C65CB1B100BB3B180D4D000000
+}">
+					<MixDetails>
+						<PassengerPlaceholder Age="-1"/>
+					</MixDetails>
+				</PassengerMixSlice>
+			</IntegratedPassengerTypePrices>
+			<PossiblePlacePrefs>
+				<PossibleSpecialRequests>
+					<SpecialRequest>Unspecified</SpecialRequest>
+				</PossibleSpecialRequests>
+				<PossibleCompartmentTypes>
+					<CompartmentType>Unspecified</CompartmentType>
+				</PossibleCompartmentTypes>
+				<PossiblePositions>
+					<Position>Unspecified</Position>
+				</PossiblePositions>
+			</PossiblePlacePrefs>
+			<SalesConditions RefundPolicy="Refundable up to 1 day before the departure date. A 40% cancellation fee applies. Non-refundable after departure. Refunds are limited to completely unused and unvalidated passes, tickets and exchange vouchers.">
+				<TermsAndConditions MustAcknowledge="false" URL=""/>
+				<RefundRules>
+					<RefundRule Sequence="1" DateBasis="Travel" WithinDateBasis="-P5Y" PenaltyRate="40.0" MinimumPenalty="0.0"/>
+					<RefundRule Sequence="2" DateBasis="Travel" WithinDateBasis="P0D" PenaltyRate="100.0" MinimumPenalty="0.0"/>
+				</RefundRules>
+			</SalesConditions>
+		</Fare>
+		<Fare FareReference="2" Class="Semi flex (HX) - Std Premier" IsEstimated="false" IsPreBookable="true" TicketingTimeLimit="2019-03-16T23:59:59.0Z" TicketCount="1" CurrencyCode="GBP" ItineraryType="One-Way-Outbound" IncludesProtectionPlan="false" ReservationRequired="true" ProductName="Eurostar E-TICKET AND RESERVATION SEMI FLEXIBLE" FareType="Regular" Magic="E6E09AD491AFB70D40ACF1E80C8D18B1
+789C6D51CB6EDB400CBCF32BD4F82C81FB92767DDB97801E5AA49073327490AD
+45A142960C6B53A408F2EF5DCB41110725781A92334372B39F0FBFC2317EC9F6
+7009E7319FFBF91C87795AB6D9BE85AEEF3F21CD791C62FE78198E619B6D3E4C
+EFE6D88DFFC1EBEE9210425981B06BEC36C3A2027D9A9FA778832BB0F3E9342C
+4BD2D866AC28157C0F6B0D0B24D084CBEF445A87701D45685B78EC5E5C88DD30
+DE2B3563EAFBEAD26462EC53FB8376BB07E87EAE8EA6790A2DFC78EEA638C43F
+D7A6A76988EF863FD95B7759E9EE8D36F54D379DE275F30A95545630E9ADE7B5
+D55C7347BD20824BE94BD4D659436D45ACA735F58608CA9071431D32E6055243
+40396EA4919A59696AA69C60DA12AEB8B3CA2155A928293768505794D1246538
+2AAA3D115611C509704C4C65A55589A52C6D29AC218620264D472467DCE31AF0
+F606DF86977FEEF73969213FCECBBA9A2C04E4876EF970A7BC3F2CE3ED34771F
+A80A22A912F81EE4FA8E35FF02514DA13A49020000
+" UseAfterTL="2019-03-20" UseByTL="2019-03-19" TravelDate="2019-03-20" PaxUnits="1" PricingOnRequest="false" BookingOnRequest="false" TicketOption="ETK" PassportRequired="false" DateOfBirthRequired="false" PaxNameRequested="true" CntryResidenceRequired="false" NationalityRequired="false" PlaceOfBirthRequired="false" EmailRequired="true" TicketType="TicketAndReser">
+			<ProdMarketingName>
+				<![CDATA[<div id="DisplayName">Eurostar E-Ticket and Reservation Semi Flexible</div>]]>
+			</ProdMarketingName>
+			<PassengerTypePrices>
+				<PassengerMixSlice SliceID="1" Code="ADT" Quantity="1" UnitPrice="123.00" TSC="0.70" TotalSliceAmount="123.70" SFDetails="#{
+789C538ECE4FCA4A4D2E515488E60ACDCB2C71CE2F2EB1523034B2D033E502B1
+9D4B8B8A3C8BF39D53AC1494DC9D0294B8824B0B0A7232538B4092AE15C91941
+40E5067A960686C65CB1B100CE2D18434E000000
+}">
+					<MixDetails>
+						<PassengerPlaceholder Age="-1"/>
+					</MixDetails>
+				</PassengerMixSlice>
+			</PassengerTypePrices>
+			<TotalPrice Fare="123.00" TSC="0.70" Amount="123.70" Commission="3.69" Net="120.01" ServiceFee="7.18295000000001"/>
+			<OriginLocation LocationCode="7015400" Name="London St Pancras Int" Country="GB"/>
+			<DestinationLocation LocationCode="8700015" Name="Paris Nord" Country="FR"/>
+			<SubComponents/>
+			<IntegratedTotalPrice Fare="123.00" TSC="0.70" Amount="123.70" Commission="3.69" Net="120.01" ServiceFee="7.18295000000001"/>
+			<IntegratedPassengerTypePrices>
+				<PassengerMixSlice SliceID="1" Code="ADT" Quantity="1" UnitPrice="123.00" TSC="0.70" TotalSliceAmount="123.70" SFDetails="#{
+789C538ECE4FCA4A4D2E515488E60ACDCB2C71CE2F2EB1523034B2D033E502B1
+9D4B8B8A3C8BF39D53AC1494DC9D0294B8824B0B0A7232538B4092AE15C91941
+40E5067A960686C65CB1B100CE2D18434E000000
+}">
+					<MixDetails>
+						<PassengerPlaceholder Age="-1"/>
+					</MixDetails>
+				</PassengerMixSlice>
+			</IntegratedPassengerTypePrices>
+			<PossiblePlacePrefs>
+				<PossibleSpecialRequests>
+					<SpecialRequest>Unspecified</SpecialRequest>
+				</PossibleSpecialRequests>
+				<PossibleCompartmentTypes>
+					<CompartmentType>Unspecified</CompartmentType>
+				</PossibleCompartmentTypes>
+				<PossiblePositions>
+					<Position>Unspecified</Position>
+				</PossiblePositions>
+			</PossiblePlacePrefs>
+			<SalesConditions RefundPolicy="Refundable up to 1 day before the departure date. A 40% cancellation fee applies. Non-refundable after departure. Refunds are limited to completely unused and unvalidated passes, tickets and exchange vouchers.">
+				<TermsAndConditions MustAcknowledge="false" URL=""/>
+				<RefundRules>
+					<RefundRule Sequence="1" DateBasis="Travel" WithinDateBasis="-P5Y" PenaltyRate="40.0" MinimumPenalty="0.0"/>
+					<RefundRule Sequence="2" DateBasis="Travel" WithinDateBasis="P0D" PenaltyRate="100.0" MinimumPenalty="0.0"/>
+				</RefundRules>
+			</SalesConditions>
+		</Fare>
+		<Fare FareReference="3" Class="Fully flex (AF) - Business Premier" IsEstimated="false" IsPreBookable="true" TicketingTimeLimit="2019-03-16T23:59:59.0Z" TicketCount="1" CurrencyCode="GBP" ItineraryType="One-Way-Outbound" IncludesProtectionPlan="false" ReservationRequired="true" ProductName="Eurostar E-TICKET AND RESERVATION FULLY FLEXIBLE" FareType="Regular" Magic="568583192C8A58A4191B75E69F2DCCF2
+789C6D514D4FEB3010BCFB57E4D173227FC6766EFE8AC4812750CAA9CA216D2C
+1494C655631008F1DF9F13D0538BB07C9A9DDD99D9DDECC2FED91FE29F6C07CE
+FE34E6A10FA7388469AEB25D0BBABEFF8134A77188F9FD7938F82ADB5C746F43
+ECC65FF0BA3B2784405A40B06D4C95C18203750C2F53FC823930E1781CE63969
+54992C10067F7DAA61C90A2640E3CFAF6968EDFDD20A41DB82FBEECDFAD80DE3
+B5523326DEADAD329426F6897EA3ECF606744FABA3294CBE050F2FDD1487F8BE
+901EA7217E1BFE616FCDB28EBB36DAD45FBA69151F9B0FC085348C08671CAD8D
+A28A5AEC18625408574265ACD1D870641CAEB1D38861024949A8E5843808B146
+405AAA85168A18A16B222D23CA202AA935D2422C535160AAA1868A63829394A6
+5062E5103312498A00858EC1922B59C25294A66446238D2034161B2488A34968
+79E0F313DC0D6FFFDDEF72D482FC10E6251AE2297BBEEFE68B3DE5FD7E1ED7D5
+A0AB0B205160C1E57285F5FF03D4609FA440020000
+" UseAfterTL="2019-03-20" UseByTL="2019-03-19" TravelDate="2019-03-20" PaxUnits="1" PricingOnRequest="false" BookingOnRequest="false" TicketOption="ETK" PassportRequired="false" DateOfBirthRequired="false" PaxNameRequested="true" CntryResidenceRequired="false" NationalityRequired="false" PlaceOfBirthRequired="false" EmailRequired="true" TicketType="TicketAndReser">
+			<ProdMarketingName>
+				<![CDATA[<div id="DisplayName">Eurostar E-Ticket and Reservation Fully Flexible</div>]]>
+			</ProdMarketingName>
+			<PassengerTypePrices>
+				<PassengerMixSlice SliceID="1" Code="ADT" Quantity="1" UnitPrice="304.00" TSC="0.70" TotalSliceAmount="304.70" SFDetails="#{
+789C538ECE4FCA4A4D2E515488E60ACDCB2C71CE2F2EB152303634D733E002B1
+9D4B8B8A3C8BF39D53AC1494DC9D0294B8824B0B0A7232538B4092AE15C91941
+40E5067A960686C65CB1B100CD2C183E4E000000
+}">
+					<MixDetails>
+						<PassengerPlaceholder Age="-1"/>
+					</MixDetails>
+				</PassengerMixSlice>
+			</PassengerTypePrices>
+			<TotalPrice Fare="304.00" TSC="0.70" Amount="304.70" Commission="9.12" Net="295.58" ServiceFee="18.2879"/>
+			<OriginLocation LocationCode="7015400" Name="London St Pancras Int" Country="GB"/>
+			<DestinationLocation LocationCode="8700015" Name="Paris Nord" Country="FR"/>
+			<SubComponents/>
+			<IntegratedTotalPrice Fare="304.00" TSC="0.70" Amount="304.70" Commission="9.12" Net="295.58" ServiceFee="18.2879"/>
+			<IntegratedPassengerTypePrices>
+				<PassengerMixSlice SliceID="1" Code="ADT" Quantity="1" UnitPrice="304.00" TSC="0.70" TotalSliceAmount="304.70" SFDetails="#{
+789C538ECE4FCA4A4D2E515488E60ACDCB2C71CE2F2EB152303634D733E002B1
+9D4B8B8A3C8BF39D53AC1494DC9D0294B8824B0B0A7232538B4092AE15C91941
+40E5067A960686C65CB1B100CD2C183E4E000000
+}">
+					<MixDetails>
+						<PassengerPlaceholder Age="-1"/>
+					</MixDetails>
+				</PassengerMixSlice>
+			</IntegratedPassengerTypePrices>
+			<PossiblePlacePrefs>
+				<PossibleSpecialRequests>
+					<SpecialRequest>Unspecified</SpecialRequest>
+				</PossibleSpecialRequests>
+				<PossibleCompartmentTypes>
+					<CompartmentType>Unspecified</CompartmentType>
+				</PossibleCompartmentTypes>
+				<PossiblePositions>
+					<Position>Unspecified</Position>
+				</PossiblePositions>
+			</PossiblePlacePrefs>
+			<SalesConditions RefundPolicy="Fully refundable up to 60 days after departure.">
+				<TermsAndConditions MustAcknowledge="false" URL=""/>
+				<RefundRules>
+					<RefundRule Sequence="1" DateBasis="Issue" WithinDateBasis="-P5Y" PenaltyRate="0.0" MinimumPenalty="0.0"/>
+					<RefundRule Sequence="2" DateBasis="Issue" WithinDateBasis="P5Y" PenaltyRate="0.0" MinimumPenalty="0.0"/>
+				</RefundRules>
+			</SalesConditions>
+		</Fare>
+		<Fare FareReference="4" Class="Semi flex (BY) - Standard" IsEstimated="false" IsPreBookable="true" TicketingTimeLimit="2019-03-16T23:59:59.0Z" TicketCount="1" CurrencyCode="GBP" ItineraryType="One-Way-Outbound" IncludesProtectionPlan="false" ReservationRequired="true" ProductName="Eurostar E-TICKET AND RESERVATION SEMI FLEXIBLE" FareType="Regular" Magic="AFF45B0D044DBC84B1344ECBD979A096
+789C6D51CB6EDB3010BCEF57A8F159C2F22591BEF1210139344821F764E8205B
+44A040160D8B291204F9F7D26A51C445883DCDEECECC0E37FB7078F6C7F82DDB
+C3C59FA73C0CE11CC7302FDB6CDF413F0CFF21ED791A63FE78198F7E9B6D3E6D
+EF42ECA72FF0A6BF2484AB0261D7DA6D864505FA145EE6B8A215D8703A8DCB92
+14B6192978050FFEDA920565D0FACBAFC4D8787F5D44E83A78EC5F9D8FFD38DD
+CAB4539ABB778922110E69FC4EBBDD1DF44FAB9D39CCBE831F2FFD1CC7F8761D
+FA398FF1AFDB5B6FEB1D2BDB8DCBB6F9A39A5278DFBC432595154CD6B6E68DD5
+5C73476B410497B22E515B670DB515B1356D686D88A00C9970C8582D9032A21C
+70238DD4CC4AD330E504D39670C59D550EA94A4D49B94183BAA28C2621C35151
+5D136115519C700427B0ACB42AB194A52D8535C41044639821121D77B83EF8F8
+80EFE3EB3FEFFB9C74901FC392EE125808C80FFDF229A27C382CD39A0AB9099F
+155C7226AE1FB0D66F81869E0538020000
+" UseAfterTL="2019-03-20" UseByTL="2019-03-19" TravelDate="2019-03-20" PaxUnits="1" PricingOnRequest="false" BookingOnRequest="false" TicketOption="ETK" PassportRequired="false" DateOfBirthRequired="false" PaxNameRequested="true" CntryResidenceRequired="false" NationalityRequired="false" PlaceOfBirthRequired="false" EmailRequired="true" TicketType="TicketAndReser">
+			<ProdMarketingName>
+				<![CDATA[<div id="DisplayName">Eurostar E-Ticket and Reservation Semi Flexible</div>]]>
+			</ProdMarketingName>
+			<PassengerTypePrices>
+				<PassengerMixSlice SliceID="1" Code="ADT" Quantity="1" UnitPrice="49.00" TSC="0.70" TotalSliceAmount="49.70" SFDetails="#{
+789C538ECE4FCA4A4D2E515488E60ACDCB2C71CE2F2EB1523035D033E502319D
+4B8B8A3C8BF39D53AC1494DC9D0294B8824B0B0A7232538B4092AE15C9194140
+D5067A960686C65CB1B100BB3B180D4D000000
+}">
+					<MixDetails>
+						<PassengerPlaceholder Age="-1"/>
+					</MixDetails>
+				</PassengerMixSlice>
+			</PassengerTypePrices>
+			<TotalPrice Fare="49.00" TSC="0.70" Amount="49.70" Commission="1.47" Net="48.23" ServiceFee="3.48435"/>
+			<OriginLocation LocationCode="7015400" Name="London St Pancras Int" Country="GB"/>
+			<DestinationLocation LocationCode="8700015" Name="Paris Nord" Country="FR"/>
+			<SubComponents/>
+			<IntegratedTotalPrice Fare="49.00" TSC="0.70" Amount="49.70" Commission="1.47" Net="48.23" ServiceFee="3.48435"/>
+			<IntegratedPassengerTypePrices>
+				<PassengerMixSlice SliceID="1" Code="ADT" Quantity="1" UnitPrice="49.00" TSC="0.70" TotalSliceAmount="49.70" SFDetails="#{
+789C538ECE4FCA4A4D2E515488E60ACDCB2C71CE2F2EB1523035D033E502319D
+4B8B8A3C8BF39D53AC1494DC9D0294B8824B0B0A7232538B4092AE15C9194140
+D5067A960686C65CB1B100BB3B180D4D000000
+}">
+					<MixDetails>
+						<PassengerPlaceholder Age="-1"/>
+					</MixDetails>
+				</PassengerMixSlice>
+			</IntegratedPassengerTypePrices>
+			<PossiblePlacePrefs>
+				<PossibleSpecialRequests>
+					<SpecialRequest>Unspecified</SpecialRequest>
+				</PossibleSpecialRequests>
+				<PossibleCompartmentTypes>
+					<CompartmentType>Unspecified</CompartmentType>
+				</PossibleCompartmentTypes>
+				<PossiblePositions>
+					<Position>Unspecified</Position>
+				</PossiblePositions>
+			</PossiblePlacePrefs>
+			<SalesConditions RefundPolicy="Refundable up to 1 day before the departure date. A 40% cancellation fee applies. Non-refundable after departure. Refunds are limited to completely unused and unvalidated passes, tickets and exchange vouchers.">
+				<TermsAndConditions MustAcknowledge="false" URL=""/>
+				<RefundRules>
+					<RefundRule Sequence="1" DateBasis="Travel" WithinDateBasis="-P5Y" PenaltyRate="40.0" MinimumPenalty="0.0"/>
+					<RefundRule Sequence="2" DateBasis="Travel" WithinDateBasis="P0D" PenaltyRate="100.0" MinimumPenalty="0.0"/>
+				</RefundRules>
+			</SalesConditions>
+		</Fare>
+		<Fare FareReference="5" Class="Semi flex (HX) - Std Premier" IsEstimated="false" IsPreBookable="true" TicketingTimeLimit="2019-03-16T23:59:59.0Z" TicketCount="1" CurrencyCode="GBP" ItineraryType="One-Way-Outbound" IncludesProtectionPlan="false" ReservationRequired="true" ProductName="Eurostar E-TICKET AND RESERVATION SEMI FLEXIBLE" FareType="Regular" Magic="E6E09AD491AFB70D40ACF1E80C8D18B1
+789C6D51CB6EDB400CBCF32BD4F82C81FB92767DDB97801E5AA49073327490AD
+45A142960C6B53A408F2EF5DCB41110725781A92334372B39F0FBFC2317EC9F6
+7009E7319FFBF91C87795AB6D9BE85AEEF3F21CD791C62FE78198E619B6D3E4C
+EFE6D88DFFC1EBEE9210425981B06BEC36C3A2027D9A9FA778832BB0F3E9342C
+4BD2D866AC28157C0F6B0D0B24D084CBEF445A87701D45685B78EC5E5C88DD30
+DE2B3563EAFBEAD26462EC53FB8376BB07E87EAE8EA6790A2DFC78EEA638C43F
+D7A6A76988EF863FD95B7759E9EE8D36F54D379DE275F30A95545630E9ADE7B5
+D55C7347BD20824BE94BD4D659436D45ACA735F58608CA9071431D32E6055243
+40396EA4919A59696AA69C60DA12AEB8B3CA2155A928293768505794D1246538
+2AAA3D115611C509704C4C65A55589A52C6D29AC218620264D472467DCE31AF0
+F606DF86977FEEF73969213FCECBBA9A2C04E4876EF970A7BC3F2CE3ED34771F
+A80A22A912F81EE4FA8E35FF02514DA13A49020000
+" UseAfterTL="2019-03-20" UseByTL="2019-03-19" TravelDate="2019-03-20" PaxUnits="1" PricingOnRequest="false" BookingOnRequest="false" TicketOption="ETK" PassportRequired="false" DateOfBirthRequired="false" PaxNameRequested="true" CntryResidenceRequired="false" NationalityRequired="false" PlaceOfBirthRequired="false" EmailRequired="true" TicketType="TicketAndReser">
+			<ProdMarketingName>
+				<![CDATA[<div id="DisplayName">Eurostar E-Ticket and Reservation Semi Flexible</div>]]>
+			</ProdMarketingName>
+			<PassengerTypePrices>
+				<PassengerMixSlice SliceID="1" Code="ADT" Quantity="1" UnitPrice="123.00" TSC="0.70" TotalSliceAmount="123.70" SFDetails="#{
+789C538ECE4FCA4A4D2E515488E60ACDCB2C71CE2F2EB1523034B2D033E502B1
+9D4B8B8A3C8BF39D53AC1494DC9D0294B8824B0B0A7232538B4092AE15C91941
+40E5067A960686C65CB1B100CE2D18434E000000
+}">
+					<MixDetails>
+						<PassengerPlaceholder Age="-1"/>
+					</MixDetails>
+				</PassengerMixSlice>
+			</PassengerTypePrices>
+			<TotalPrice Fare="123.00" TSC="0.70" Amount="123.70" Commission="3.69" Net="120.01" ServiceFee="7.18295000000001"/>
+			<OriginLocation LocationCode="7015400" Name="London St Pancras Int" Country="GB"/>
+			<DestinationLocation LocationCode="8700015" Name="Paris Nord" Country="FR"/>
+			<SubComponents/>
+			<IntegratedTotalPrice Fare="123.00" TSC="0.70" Amount="123.70" Commission="3.69" Net="120.01" ServiceFee="7.18295000000001"/>
+			<IntegratedPassengerTypePrices>
+				<PassengerMixSlice SliceID="1" Code="ADT" Quantity="1" UnitPrice="123.00" TSC="0.70" TotalSliceAmount="123.70" SFDetails="#{
+789C538ECE4FCA4A4D2E515488E60ACDCB2C71CE2F2EB1523034B2D033E502B1
+9D4B8B8A3C8BF39D53AC1494DC9D0294B8824B0B0A7232538B4092AE15C91941
+40E5067A960686C65CB1B100CE2D18434E000000
+}">
+					<MixDetails>
+						<PassengerPlaceholder Age="-1"/>
+					</MixDetails>
+				</PassengerMixSlice>
+			</IntegratedPassengerTypePrices>
+			<PossiblePlacePrefs>
+				<PossibleSpecialRequests>
+					<SpecialRequest>Unspecified</SpecialRequest>
+				</PossibleSpecialRequests>
+				<PossibleCompartmentTypes>
+					<CompartmentType>Unspecified</CompartmentType>
+				</PossibleCompartmentTypes>
+				<PossiblePositions>
+					<Position>Unspecified</Position>
+				</PossiblePositions>
+			</PossiblePlacePrefs>
+			<SalesConditions RefundPolicy="Refundable up to 1 day before the departure date. A 40% cancellation fee applies. Non-refundable after departure. Refunds are limited to completely unused and unvalidated passes, tickets and exchange vouchers.">
+				<TermsAndConditions MustAcknowledge="false" URL=""/>
+				<RefundRules>
+					<RefundRule Sequence="1" DateBasis="Travel" WithinDateBasis="-P5Y" PenaltyRate="40.0" MinimumPenalty="0.0"/>
+					<RefundRule Sequence="2" DateBasis="Travel" WithinDateBasis="P0D" PenaltyRate="100.0" MinimumPenalty="0.0"/>
+				</RefundRules>
+			</SalesConditions>
+		</Fare>
+		<Fare FareReference="6" Class="Fully flex (AF) - Business Premier" IsEstimated="false" IsPreBookable="true" TicketingTimeLimit="2019-03-16T23:59:59.0Z" TicketCount="1" CurrencyCode="GBP" ItineraryType="One-Way-Outbound" IncludesProtectionPlan="false" ReservationRequired="true" ProductName="Eurostar E-TICKET AND RESERVATION FULLY FLEXIBLE" FareType="Regular" Magic="568583192C8A58A4191B75E69F2DCCF2
+789C6D514D4FEB3010BCFB57E4D173227FC6766EFE8AC4812750CAA9CA216D2C
+1494C655631008F1DF9F13D0538BB07C9A9DDD99D9DDECC2FED91FE29F6C07CE
+FE34E6A10FA7388469AEB25D0BBABEFF8134A77188F9FD7938F82ADB5C746F43
+ECC65FF0BA3B2784405A40B06D4C95C18203750C2F53FC823930E1781CE63969
+54992C10067F7DAA61C90A2640E3CFAF6968EDFDD20A41DB82FBEECDFAD80DE3
+B5523326DEADAD329426F6897EA3ECF606744FABA3294CBE050F2FDD1487F8BE
+901EA7217E1BFE616FCDB28EBB36DAD45FBA69151F9B0FC085348C08671CAD8D
+A28A5AEC18625408574265ACD1D870641CAEB1D38861024949A8E5843808B146
+405AAA85168A18A16B222D23CA202AA935D2422C535160AAA1868A63829394A6
+5062E5103312498A00858EC1922B59C25294A66446238D2034161B2488A34968
+79E0F313DC0D6FFFDDEF72D482FC10E6251AE2297BBEEFE68B3DE5FD7E1ED7D5
+A0AB0B205160C1E57285F5FF03D4609FA440020000
+" UseAfterTL="2019-03-20" UseByTL="2019-03-19" TravelDate="2019-03-20" PaxUnits="1" PricingOnRequest="false" BookingOnRequest="false" TicketOption="ETK" PassportRequired="false" DateOfBirthRequired="false" PaxNameRequested="true" CntryResidenceRequired="false" NationalityRequired="false" PlaceOfBirthRequired="false" EmailRequired="true" TicketType="TicketAndReser">
+			<ProdMarketingName>
+				<![CDATA[<div id="DisplayName">Eurostar E-Ticket and Reservation Fully Flexible</div>]]>
+			</ProdMarketingName>
+			<PassengerTypePrices>
+				<PassengerMixSlice SliceID="1" Code="ADT" Quantity="1" UnitPrice="304.00" TSC="0.70" TotalSliceAmount="304.70" SFDetails="#{
+789C538ECE4FCA4A4D2E515488E60ACDCB2C71CE2F2EB152303634D733E002B1
+9D4B8B8A3C8BF39D53AC1494DC9D0294B8824B0B0A7232538B4092AE15C91941
+40E5067A960686C65CB1B100CD2C183E4E000000
+}">
+					<MixDetails>
+						<PassengerPlaceholder Age="-1"/>
+					</MixDetails>
+				</PassengerMixSlice>
+			</PassengerTypePrices>
+			<TotalPrice Fare="304.00" TSC="0.70" Amount="304.70" Commission="9.12" Net="295.58" ServiceFee="18.2879"/>
+			<OriginLocation LocationCode="7015400" Name="London St Pancras Int" Country="GB"/>
+			<DestinationLocation LocationCode="8700015" Name="Paris Nord" Country="FR"/>
+			<SubComponents/>
+			<IntegratedTotalPrice Fare="304.00" TSC="0.70" Amount="304.70" Commission="9.12" Net="295.58" ServiceFee="18.2879"/>
+			<IntegratedPassengerTypePrices>
+				<PassengerMixSlice SliceID="1" Code="ADT" Quantity="1" UnitPrice="304.00" TSC="0.70" TotalSliceAmount="304.70" SFDetails="#{
+789C538ECE4FCA4A4D2E515488E60ACDCB2C71CE2F2EB152303634D733E002B1
+9D4B8B8A3C8BF39D53AC1494DC9D0294B8824B0B0A7232538B4092AE15C91941
+40E5067A960686C65CB1B100CD2C183E4E000000
+}">
+					<MixDetails>
+						<PassengerPlaceholder Age="-1"/>
+					</MixDetails>
+				</PassengerMixSlice>
+			</IntegratedPassengerTypePrices>
+			<PossiblePlacePrefs>
+				<PossibleSpecialRequests>
+					<SpecialRequest>Unspecified</SpecialRequest>
+				</PossibleSpecialRequests>
+				<PossibleCompartmentTypes>
+					<CompartmentType>Unspecified</CompartmentType>
+				</PossibleCompartmentTypes>
+				<PossiblePositions>
+					<Position>Unspecified</Position>
+				</PossiblePositions>
+			</PossiblePlacePrefs>
+			<SalesConditions RefundPolicy="Fully refundable up to 60 days after departure.">
+				<TermsAndConditions MustAcknowledge="false" URL=""/>
+				<RefundRules>
+					<RefundRule Sequence="1" DateBasis="Issue" WithinDateBasis="-P5Y" PenaltyRate="0.0" MinimumPenalty="0.0"/>
+					<RefundRule Sequence="2" DateBasis="Issue" WithinDateBasis="P5Y" PenaltyRate="0.0" MinimumPenalty="0.0"/>
+				</RefundRules>
+			</SalesConditions>
+		</Fare>
+		<Fare FareReference="7" Class="Semi flex (BY) - Standard" IsEstimated="false" IsPreBookable="true" TicketingTimeLimit="2019-03-16T23:59:59.0Z" TicketCount="1" CurrencyCode="GBP" ItineraryType="One-Way-Outbound" IncludesProtectionPlan="false" ReservationRequired="true" ProductName="Eurostar E-TICKET AND RESERVATION SEMI FLEXIBLE" FareType="Regular" Magic="AFF45B0D044DBC84B1344ECBD979A096
+789C6D51CB6EDB3010BCEF57A8F159C2F22591BEF1210139344821F764E8205B
+44A040160D8B291204F9F7D26A51C445883DCDEECECC0E37FB7078F6C7F82DDB
+C3C59FA73C0CE11CC7302FDB6CDF413F0CFF21ED791A63FE78198F7E9B6D3E6D
+EF42ECA72FF0A6BF2484AB0261D7DA6D864505FA145EE6B8A215D8703A8DCB92
+14B6192978050FFEDA920565D0FACBAFC4D8787F5D44E83A78EC5F9D8FFD38DD
+CAB4539ABB778922110E69FC4EBBDD1DF44FAB9D39CCBE831F2FFD1CC7F8761D
+FA398FF1AFDB5B6FEB1D2BDB8DCBB6F9A39A5278DFBC432595154CD6B6E68DD5
+5C73476B410497B22E515B670DB515B1356D686D88A00C9970C8582D9032A21C
+70238DD4CC4AD330E504D39670C59D550EA94A4D49B94183BAA28C2621C35151
+5D136115519C700427B0ACB42AB194A52D8535C41044639821121D77B83EF8F8
+80EFE3EB3FEFFB9C74901FC392EE125808C80FFDF229A27C382CD39A0AB9099F
+155C7226AE1FB0D66F81869E0538020000
+" UseAfterTL="2019-03-20" UseByTL="2019-03-19" TravelDate="2019-03-20" PaxUnits="1" PricingOnRequest="false" BookingOnRequest="false" TicketOption="ETK" PassportRequired="false" DateOfBirthRequired="false" PaxNameRequested="true" CntryResidenceRequired="false" NationalityRequired="false" PlaceOfBirthRequired="false" EmailRequired="true" TicketType="TicketAndReser">
+			<ProdMarketingName>
+				<![CDATA[<div id="DisplayName">Eurostar E-Ticket and Reservation Semi Flexible</div>]]>
+			</ProdMarketingName>
+			<PassengerTypePrices>
+				<PassengerMixSlice SliceID="1" Code="ADT" Quantity="1" UnitPrice="49.00" TSC="0.70" TotalSliceAmount="49.70" SFDetails="#{
+789C538ECE4FCA4A4D2E515488E60ACDCB2C71CE2F2EB1523035D033E502319D
+4B8B8A3C8BF39D53AC1494DC9D0294B8824B0B0A7232538B4092AE15C9194140
+D5067A960686C65CB1B100BB3B180D4D000000
+}">
+					<MixDetails>
+						<PassengerPlaceholder Age="-1"/>
+					</MixDetails>
+				</PassengerMixSlice>
+			</PassengerTypePrices>
+			<TotalPrice Fare="49.00" TSC="0.70" Amount="49.70" Commission="1.47" Net="48.23" ServiceFee="3.48435"/>
+			<OriginLocation LocationCode="7015400" Name="London St Pancras Int" Country="GB"/>
+			<DestinationLocation LocationCode="8700015" Name="Paris Nord" Country="FR"/>
+			<SubComponents/>
+			<IntegratedTotalPrice Fare="49.00" TSC="0.70" Amount="49.70" Commission="1.47" Net="48.23" ServiceFee="3.48435"/>
+			<IntegratedPassengerTypePrices>
+				<PassengerMixSlice SliceID="1" Code="ADT" Quantity="1" UnitPrice="49.00" TSC="0.70" TotalSliceAmount="49.70" SFDetails="#{
+789C538ECE4FCA4A4D2E515488E60ACDCB2C71CE2F2EB1523035D033E502319D
+4B8B8A3C8BF39D53AC1494DC9D0294B8824B0B0A7232538B4092AE15C9194140
+D5067A960686C65CB1B100BB3B180D4D000000
+}">
+					<MixDetails>
+						<PassengerPlaceholder Age="-1"/>
+					</MixDetails>
+				</PassengerMixSlice>
+			</IntegratedPassengerTypePrices>
+			<PossiblePlacePrefs>
+				<PossibleSpecialRequests>
+					<SpecialRequest>Unspecified</SpecialRequest>
+				</PossibleSpecialRequests>
+				<PossibleCompartmentTypes>
+					<CompartmentType>Unspecified</CompartmentType>
+				</PossibleCompartmentTypes>
+				<PossiblePositions>
+					<Position>Unspecified</Position>
+				</PossiblePositions>
+			</PossiblePlacePrefs>
+			<SalesConditions RefundPolicy="Refundable up to 1 day before the departure date. A 40% cancellation fee applies. Non-refundable after departure. Refunds are limited to completely unused and unvalidated passes, tickets and exchange vouchers.">
+				<TermsAndConditions MustAcknowledge="false" URL=""/>
+				<RefundRules>
+					<RefundRule Sequence="1" DateBasis="Travel" WithinDateBasis="-P5Y" PenaltyRate="40.0" MinimumPenalty="0.0"/>
+					<RefundRule Sequence="2" DateBasis="Travel" WithinDateBasis="P0D" PenaltyRate="100.0" MinimumPenalty="0.0"/>
+				</RefundRules>
+			</SalesConditions>
+		</Fare>
+		<Fare FareReference="8" Class="Semi flex (HX) - Std Premier" IsEstimated="false" IsPreBookable="true" TicketingTimeLimit="2019-03-16T23:59:59.0Z" TicketCount="1" CurrencyCode="GBP" ItineraryType="One-Way-Outbound" IncludesProtectionPlan="false" ReservationRequired="true" ProductName="Eurostar E-TICKET AND RESERVATION SEMI FLEXIBLE" FareType="Regular" Magic="E6E09AD491AFB70D40ACF1E80C8D18B1
+789C6D51CB6EDB400CBCF32BD4F82C81FB92767DDB97801E5AA49073327490AD
+45A142960C6B53A408F2EF5DCB41110725781A92334372B39F0FBFC2317EC9F6
+7009E7319FFBF91C87795AB6D9BE85AEEF3F21CD791C62FE78198E619B6D3E4C
+EFE6D88DFFC1EBEE9210425981B06BEC36C3A2027D9A9FA778832BB0F3E9342C
+4BD2D866AC28157C0F6B0D0B24D084CBEF445A87701D45685B78EC5E5C88DD30
+DE2B3563EAFBEAD26462EC53FB8376BB07E87EAE8EA6790A2DFC78EEA638C43F
+D7A6A76988EF863FD95B7759E9EE8D36F54D379DE275F30A95545630E9ADE7B5
+D55C7347BD20824BE94BD4D659436D45ACA735F58608CA9071431D32E6055243
+40396EA4919A59696AA69C60DA12AEB8B3CA2155A928293768505794D1246538
+2AAA3D115611C509704C4C65A55589A52C6D29AC218620264D472467DCE31AF0
+F606DF86977FEEF73969213FCECBBA9A2C04E4876EF970A7BC3F2CE3ED34771F
+A80A22A912F81EE4FA8E35FF02514DA13A49020000
+" UseAfterTL="2019-03-20" UseByTL="2019-03-19" TravelDate="2019-03-20" PaxUnits="1" PricingOnRequest="false" BookingOnRequest="false" TicketOption="ETK" PassportRequired="false" DateOfBirthRequired="false" PaxNameRequested="true" CntryResidenceRequired="false" NationalityRequired="false" PlaceOfBirthRequired="false" EmailRequired="true" TicketType="TicketAndReser">
+			<ProdMarketingName>
+				<![CDATA[<div id="DisplayName">Eurostar E-Ticket and Reservation Semi Flexible</div>]]>
+			</ProdMarketingName>
+			<PassengerTypePrices>
+				<PassengerMixSlice SliceID="1" Code="ADT" Quantity="1" UnitPrice="123.00" TSC="0.70" TotalSliceAmount="123.70" SFDetails="#{
+789C538ECE4FCA4A4D2E515488E60ACDCB2C71CE2F2EB1523034B2D033E502B1
+9D4B8B8A3C8BF39D53AC1494DC9D0294B8824B0B0A7232538B4092AE15C91941
+40E5067A960686C65CB1B100CE2D18434E000000
+}">
+					<MixDetails>
+						<PassengerPlaceholder Age="-1"/>
+					</MixDetails>
+				</PassengerMixSlice>
+			</PassengerTypePrices>
+			<TotalPrice Fare="123.00" TSC="0.70" Amount="123.70" Commission="3.69" Net="120.01" ServiceFee="7.18295000000001"/>
+			<OriginLocation LocationCode="7015400" Name="London St Pancras Int" Country="GB"/>
+			<DestinationLocation LocationCode="8700015" Name="Paris Nord" Country="FR"/>
+			<SubComponents/>
+			<IntegratedTotalPrice Fare="123.00" TSC="0.70" Amount="123.70" Commission="3.69" Net="120.01" ServiceFee="7.18295000000001"/>
+			<IntegratedPassengerTypePrices>
+				<PassengerMixSlice SliceID="1" Code="ADT" Quantity="1" UnitPrice="123.00" TSC="0.70" TotalSliceAmount="123.70" SFDetails="#{
+789C538ECE4FCA4A4D2E515488E60ACDCB2C71CE2F2EB1523034B2D033E502B1
+9D4B8B8A3C8BF39D53AC1494DC9D0294B8824B0B0A7232538B4092AE15C91941
+40E5067A960686C65CB1B100CE2D18434E000000
+}">
+					<MixDetails>
+						<PassengerPlaceholder Age="-1"/>
+					</MixDetails>
+				</PassengerMixSlice>
+			</IntegratedPassengerTypePrices>
+			<PossiblePlacePrefs>
+				<PossibleSpecialRequests>
+					<SpecialRequest>Unspecified</SpecialRequest>
+				</PossibleSpecialRequests>
+				<PossibleCompartmentTypes>
+					<CompartmentType>Unspecified</CompartmentType>
+				</PossibleCompartmentTypes>
+				<PossiblePositions>
+					<Position>Unspecified</Position>
+				</PossiblePositions>
+			</PossiblePlacePrefs>
+			<SalesConditions RefundPolicy="Refundable up to 1 day before the departure date. A 40% cancellation fee applies. Non-refundable after departure. Refunds are limited to completely unused and unvalidated passes, tickets and exchange vouchers.">
+				<TermsAndConditions MustAcknowledge="false" URL=""/>
+				<RefundRules>
+					<RefundRule Sequence="1" DateBasis="Travel" WithinDateBasis="-P5Y" PenaltyRate="40.0" MinimumPenalty="0.0"/>
+					<RefundRule Sequence="2" DateBasis="Travel" WithinDateBasis="P0D" PenaltyRate="100.0" MinimumPenalty="0.0"/>
+				</RefundRules>
+			</SalesConditions>
+		</Fare>
+		<Fare FareReference="9" Class="Fully flex (AF) - Business Premier" IsEstimated="false" IsPreBookable="true" TicketingTimeLimit="2019-03-16T23:59:59.0Z" TicketCount="1" CurrencyCode="GBP" ItineraryType="One-Way-Outbound" IncludesProtectionPlan="false" ReservationRequired="true" ProductName="Eurostar E-TICKET AND RESERVATION FULLY FLEXIBLE" FareType="Regular" Magic="568583192C8A58A4191B75E69F2DCCF2
+789C6D514D4FEB3010BCFB57E4D173227FC6766EFE8AC4812750CAA9CA216D2C
+1494C655631008F1DF9F13D0538BB07C9A9DDD99D9DDECC2FED91FE29F6C07CE
+FE34E6A10FA7388469AEB25D0BBABEFF8134A77188F9FD7938F82ADB5C746F43
+ECC65FF0BA3B2784405A40B06D4C95C18203750C2F53FC823930E1781CE63969
+54992C10067F7DAA61C90A2640E3CFAF6968EDFDD20A41DB82FBEECDFAD80DE3
+B5523326DEADAD329426F6897EA3ECF606744FABA3294CBE050F2FDD1487F8BE
+901EA7217E1BFE616FCDB28EBB36DAD45FBA69151F9B0FC085348C08671CAD8D
+A28A5AEC18625408574265ACD1D870641CAEB1D38861024949A8E5843808B146
+405AAA85168A18A16B222D23CA202AA935D2422C535160AAA1868A63829394A6
+5062E5103312498A00858EC1922B59C25294A66446238D2034161B2488A34968
+79E0F313DC0D6FFFDDEF72D482FC10E6251AE2297BBEEFE68B3DE5FD7E1ED7D5
+A0AB0B205160C1E57285F5FF03D4609FA440020000
+" UseAfterTL="2019-03-20" UseByTL="2019-03-19" TravelDate="2019-03-20" PaxUnits="1" PricingOnRequest="false" BookingOnRequest="false" TicketOption="ETK" PassportRequired="false" DateOfBirthRequired="false" PaxNameRequested="true" CntryResidenceRequired="false" NationalityRequired="false" PlaceOfBirthRequired="false" EmailRequired="true" TicketType="TicketAndReser">
+			<ProdMarketingName>
+				<![CDATA[<div id="DisplayName">Eurostar E-Ticket and Reservation Fully Flexible</div>]]>
+			</ProdMarketingName>
+			<PassengerTypePrices>
+				<PassengerMixSlice SliceID="1" Code="ADT" Quantity="1" UnitPrice="304.00" TSC="0.70" TotalSliceAmount="304.70" SFDetails="#{
+789C538ECE4FCA4A4D2E515488E60ACDCB2C71CE2F2EB152303634D733E002B1
+9D4B8B8A3C8BF39D53AC1494DC9D0294B8824B0B0A7232538B4092AE15C91941
+40E5067A960686C65CB1B100CD2C183E4E000000
+}">
+					<MixDetails>
+						<PassengerPlaceholder Age="-1"/>
+					</MixDetails>
+				</PassengerMixSlice>
+			</PassengerTypePrices>
+			<TotalPrice Fare="304.00" TSC="0.70" Amount="304.70" Commission="9.12" Net="295.58" ServiceFee="18.2879"/>
+			<OriginLocation LocationCode="7015400" Name="London St Pancras Int" Country="GB"/>
+			<DestinationLocation LocationCode="8700015" Name="Paris Nord" Country="FR"/>
+			<SubComponents/>
+			<IntegratedTotalPrice Fare="304.00" TSC="0.70" Amount="304.70" Commission="9.12" Net="295.58" ServiceFee="18.2879"/>
+			<IntegratedPassengerTypePrices>
+				<PassengerMixSlice SliceID="1" Code="ADT" Quantity="1" UnitPrice="304.00" TSC="0.70" TotalSliceAmount="304.70" SFDetails="#{
+789C538ECE4FCA4A4D2E515488E60ACDCB2C71CE2F2EB152303634D733E002B1
+9D4B8B8A3C8BF39D53AC1494DC9D0294B8824B0B0A7232538B4092AE15C91941
+40E5067A960686C65CB1B100CD2C183E4E000000
+}">
+					<MixDetails>
+						<PassengerPlaceholder Age="-1"/>
+					</MixDetails>
+				</PassengerMixSlice>
+			</IntegratedPassengerTypePrices>
+			<PossiblePlacePrefs>
+				<PossibleSpecialRequests>
+					<SpecialRequest>Unspecified</SpecialRequest>
+				</PossibleSpecialRequests>
+				<PossibleCompartmentTypes>
+					<CompartmentType>Unspecified</CompartmentType>
+				</PossibleCompartmentTypes>
+				<PossiblePositions>
+					<Position>Unspecified</Position>
+				</PossiblePositions>
+			</PossiblePlacePrefs>
+			<SalesConditions RefundPolicy="Fully refundable up to 60 days after departure.">
+				<TermsAndConditions MustAcknowledge="false" URL=""/>
+				<RefundRules>
+					<RefundRule Sequence="1" DateBasis="Issue" WithinDateBasis="-P5Y" PenaltyRate="0.0" MinimumPenalty="0.0"/>
+					<RefundRule Sequence="2" DateBasis="Issue" WithinDateBasis="P5Y" PenaltyRate="0.0" MinimumPenalty="0.0"/>
+				</RefundRules>
+			</SalesConditions>
+		</Fare>
+		<Fare FareReference="10" Class="Semi flex (BY) - Standard" IsEstimated="false" IsPreBookable="true" TicketingTimeLimit="2019-03-16T23:59:59.0Z" TicketCount="1" CurrencyCode="GBP" ItineraryType="One-Way-Outbound" IncludesProtectionPlan="false" ReservationRequired="true" ProductName="Eurostar E-TICKET AND RESERVATION SEMI FLEXIBLE" FareType="Regular" Magic="AFF45B0D044DBC84B1344ECBD979A096
+789C6D51CB6EDB3010BCEF57A8F159C2F22591BEF1210139344821F764E8205B
+44A040160D8B291204F9F7D26A51C445883DCDEECECC0E37FB7078F6C7F82DDB
+C3C59FA73C0CE11CC7302FDB6CDF413F0CFF21ED791A63FE78198F7E9B6D3E6D
+EF42ECA72FF0A6BF2484AB0261D7DA6D864505FA145EE6B8A215D8703A8DCB92
+14B6192978050FFEDA920565D0FACBAFC4D8787F5D44E83A78EC5F9D8FFD38DD
+CAB4539ABB778922110E69FC4EBBDD1DF44FAB9D39CCBE831F2FFD1CC7F8761D
+FA398FF1AFDB5B6FEB1D2BDB8DCBB6F9A39A5278DFBC432595154CD6B6E68DD5
+5C73476B410497B22E515B670DB515B1356D686D88A00C9970C8582D9032A21C
+70238DD4CC4AD330E504D39670C59D550EA94A4D49B94183BAA28C2621C35151
+5D136115519C700427B0ACB42AB194A52D8535C41044639821121D77B83EF8F8
+80EFE3EB3FEFFB9C74901FC392EE125808C80FFDF229A27C382CD39A0AB9099F
+155C7226AE1FB0D66F81869E0538020000
+" UseAfterTL="2019-03-20" UseByTL="2019-03-19" TravelDate="2019-03-20" PaxUnits="1" PricingOnRequest="false" BookingOnRequest="false" TicketOption="ETK" PassportRequired="false" DateOfBirthRequired="false" PaxNameRequested="true" CntryResidenceRequired="false" NationalityRequired="false" PlaceOfBirthRequired="false" EmailRequired="true" TicketType="TicketAndReser">
+			<ProdMarketingName>
+				<![CDATA[<div id="DisplayName">Eurostar E-Ticket and Reservation Semi Flexible</div>]]>
+			</ProdMarketingName>
+			<PassengerTypePrices>
+				<PassengerMixSlice SliceID="1" Code="ADT" Quantity="1" UnitPrice="49.00" TSC="0.70" TotalSliceAmount="49.70" SFDetails="#{
+789C538ECE4FCA4A4D2E515488E60ACDCB2C71CE2F2EB1523035D033E502319D
+4B8B8A3C8BF39D53AC1494DC9D0294B8824B0B0A7232538B4092AE15C9194140
+D5067A960686C65CB1B100BB3B180D4D000000
+}">
+					<MixDetails>
+						<PassengerPlaceholder Age="-1"/>
+					</MixDetails>
+				</PassengerMixSlice>
+			</PassengerTypePrices>
+			<TotalPrice Fare="49.00" TSC="0.70" Amount="49.70" Commission="1.47" Net="48.23" ServiceFee="3.48435"/>
+			<OriginLocation LocationCode="7015400" Name="London St Pancras Int" Country="GB"/>
+			<DestinationLocation LocationCode="8700015" Name="Paris Nord" Country="FR"/>
+			<SubComponents/>
+			<IntegratedTotalPrice Fare="49.00" TSC="0.70" Amount="49.70" Commission="1.47" Net="48.23" ServiceFee="3.48435"/>
+			<IntegratedPassengerTypePrices>
+				<PassengerMixSlice SliceID="1" Code="ADT" Quantity="1" UnitPrice="49.00" TSC="0.70" TotalSliceAmount="49.70" SFDetails="#{
+789C538ECE4FCA4A4D2E515488E60ACDCB2C71CE2F2EB1523035D033E502319D
+4B8B8A3C8BF39D53AC1494DC9D0294B8824B0B0A7232538B4092AE15C9194140
+D5067A960686C65CB1B100BB3B180D4D000000
+}">
+					<MixDetails>
+						<PassengerPlaceholder Age="-1"/>
+					</MixDetails>
+				</PassengerMixSlice>
+			</IntegratedPassengerTypePrices>
+			<PossiblePlacePrefs>
+				<PossibleSpecialRequests>
+					<SpecialRequest>Unspecified</SpecialRequest>
+				</PossibleSpecialRequests>
+				<PossibleCompartmentTypes>
+					<CompartmentType>Unspecified</CompartmentType>
+				</PossibleCompartmentTypes>
+				<PossiblePositions>
+					<Position>Unspecified</Position>
+				</PossiblePositions>
+			</PossiblePlacePrefs>
+			<SalesConditions RefundPolicy="Refundable up to 1 day before the departure date. A 40% cancellation fee applies. Non-refundable after departure. Refunds are limited to completely unused and unvalidated passes, tickets and exchange vouchers.">
+				<TermsAndConditions MustAcknowledge="false" URL=""/>
+				<RefundRules>
+					<RefundRule Sequence="1" DateBasis="Travel" WithinDateBasis="-P5Y" PenaltyRate="40.0" MinimumPenalty="0.0"/>
+					<RefundRule Sequence="2" DateBasis="Travel" WithinDateBasis="P0D" PenaltyRate="100.0" MinimumPenalty="0.0"/>
+				</RefundRules>
+			</SalesConditions>
+		</Fare>
+		<Fare FareReference="11" Class="Semi flex (HX) - Std Premier" IsEstimated="false" IsPreBookable="true" TicketingTimeLimit="2019-03-16T23:59:59.0Z" TicketCount="1" CurrencyCode="GBP" ItineraryType="One-Way-Outbound" IncludesProtectionPlan="false" ReservationRequired="true" ProductName="Eurostar E-TICKET AND RESERVATION SEMI FLEXIBLE" FareType="Regular" Magic="E6E09AD491AFB70D40ACF1E80C8D18B1
+789C6D51CB6EDB400CBCF32BD4F82C81FB92767DDB97801E5AA49073327490AD
+45A142960C6B53A408F2EF5DCB41110725781A92334372B39F0FBFC2317EC9F6
+7009E7319FFBF91C87795AB6D9BE85AEEF3F21CD791C62FE78198E619B6D3E4C
+EFE6D88DFFC1EBEE9210425981B06BEC36C3A2027D9A9FA778832BB0F3E9342C
+4BD2D866AC28157C0F6B0D0B24D084CBEF445A87701D45685B78EC5E5C88DD30
+DE2B3563EAFBEAD26462EC53FB8376BB07E87EAE8EA6790A2DFC78EEA638C43F
+D7A6A76988EF863FD95B7759E9EE8D36F54D379DE275F30A95545630E9ADE7B5
+D55C7347BD20824BE94BD4D659436D45ACA735F58608CA9071431D32E6055243
+40396EA4919A59696AA69C60DA12AEB8B3CA2155A928293768505794D1246538
+2AAA3D115611C509704C4C65A55589A52C6D29AC218620264D472467DCE31AF0
+F606DF86977FEEF73969213FCECBBA9A2C04E4876EF970A7BC3F2CE3ED34771F
+A80A22A912F81EE4FA8E35FF02514DA13A49020000
+" UseAfterTL="2019-03-20" UseByTL="2019-03-19" TravelDate="2019-03-20" PaxUnits="1" PricingOnRequest="false" BookingOnRequest="false" TicketOption="ETK" PassportRequired="false" DateOfBirthRequired="false" PaxNameRequested="true" CntryResidenceRequired="false" NationalityRequired="false" PlaceOfBirthRequired="false" EmailRequired="true" TicketType="TicketAndReser">
+			<ProdMarketingName>
+				<![CDATA[<div id="DisplayName">Eurostar E-Ticket and Reservation Semi Flexible</div>]]>
+			</ProdMarketingName>
+			<PassengerTypePrices>
+				<PassengerMixSlice SliceID="1" Code="ADT" Quantity="1" UnitPrice="123.00" TSC="0.70" TotalSliceAmount="123.70" SFDetails="#{
+789C538ECE4FCA4A4D2E515488E60ACDCB2C71CE2F2EB1523034B2D033E502B1
+9D4B8B8A3C8BF39D53AC1494DC9D0294B8824B0B0A7232538B4092AE15C91941
+40E5067A960686C65CB1B100CE2D18434E000000
+}">
+					<MixDetails>
+						<PassengerPlaceholder Age="-1"/>
+					</MixDetails>
+				</PassengerMixSlice>
+			</PassengerTypePrices>
+			<TotalPrice Fare="123.00" TSC="0.70" Amount="123.70" Commission="3.69" Net="120.01" ServiceFee="7.18295000000001"/>
+			<OriginLocation LocationCode="7015400" Name="London St Pancras Int" Country="GB"/>
+			<DestinationLocation LocationCode="8700015" Name="Paris Nord" Country="FR"/>
+			<SubComponents/>
+			<IntegratedTotalPrice Fare="123.00" TSC="0.70" Amount="123.70" Commission="3.69" Net="120.01" ServiceFee="7.18295000000001"/>
+			<IntegratedPassengerTypePrices>
+				<PassengerMixSlice SliceID="1" Code="ADT" Quantity="1" UnitPrice="123.00" TSC="0.70" TotalSliceAmount="123.70" SFDetails="#{
+789C538ECE4FCA4A4D2E515488E60ACDCB2C71CE2F2EB1523034B2D033E502B1
+9D4B8B8A3C8BF39D53AC1494DC9D0294B8824B0B0A7232538B4092AE15C91941
+40E5067A960686C65CB1B100CE2D18434E000000
+}">
+					<MixDetails>
+						<PassengerPlaceholder Age="-1"/>
+					</MixDetails>
+				</PassengerMixSlice>
+			</IntegratedPassengerTypePrices>
+			<PossiblePlacePrefs>
+				<PossibleSpecialRequests>
+					<SpecialRequest>Unspecified</SpecialRequest>
+				</PossibleSpecialRequests>
+				<PossibleCompartmentTypes>
+					<CompartmentType>Unspecified</CompartmentType>
+				</PossibleCompartmentTypes>
+				<PossiblePositions>
+					<Position>Unspecified</Position>
+				</PossiblePositions>
+			</PossiblePlacePrefs>
+			<SalesConditions RefundPolicy="Refundable up to 1 day before the departure date. A 40% cancellation fee applies. Non-refundable after departure. Refunds are limited to completely unused and unvalidated passes, tickets and exchange vouchers.">
+				<TermsAndConditions MustAcknowledge="false" URL=""/>
+				<RefundRules>
+					<RefundRule Sequence="1" DateBasis="Travel" WithinDateBasis="-P5Y" PenaltyRate="40.0" MinimumPenalty="0.0"/>
+					<RefundRule Sequence="2" DateBasis="Travel" WithinDateBasis="P0D" PenaltyRate="100.0" MinimumPenalty="0.0"/>
+				</RefundRules>
+			</SalesConditions>
+		</Fare>
+		<Fare FareReference="12" Class="Fully flex (AF) - Business Premier" IsEstimated="false" IsPreBookable="true" TicketingTimeLimit="2019-03-16T23:59:59.0Z" TicketCount="1" CurrencyCode="GBP" ItineraryType="One-Way-Outbound" IncludesProtectionPlan="false" ReservationRequired="true" ProductName="Eurostar E-TICKET AND RESERVATION FULLY FLEXIBLE" FareType="Regular" Magic="568583192C8A58A4191B75E69F2DCCF2
+789C6D514D4FEB3010BCFB57E4D173227FC6766EFE8AC4812750CAA9CA216D2C
+1494C655631008F1DF9F13D0538BB07C9A9DDD99D9DDECC2FED91FE29F6C07CE
+FE34E6A10FA7388469AEB25D0BBABEFF8134A77188F9FD7938F82ADB5C746F43
+ECC65FF0BA3B2784405A40B06D4C95C18203750C2F53FC823930E1781CE63969
+54992C10067F7DAA61C90A2640E3CFAF6968EDFDD20A41DB82FBEECDFAD80DE3
+B5523326DEADAD329426F6897EA3ECF606744FABA3294CBE050F2FDD1487F8BE
+901EA7217E1BFE616FCDB28EBB36DAD45FBA69151F9B0FC085348C08671CAD8D
+A28A5AEC18625408574265ACD1D870641CAEB1D38861024949A8E5843808B146
+405AAA85168A18A16B222D23CA202AA935D2422C535160AAA1868A63829394A6
+5062E5103312498A00858EC1922B59C25294A66446238D2034161B2488A34968
+79E0F313DC0D6FFFDDEF72D482FC10E6251AE2297BBEEFE68B3DE5FD7E1ED7D5
+A0AB0B205160C1E57285F5FF03D4609FA440020000
+" UseAfterTL="2019-03-20" UseByTL="2019-03-19" TravelDate="2019-03-20" PaxUnits="1" PricingOnRequest="false" BookingOnRequest="false" TicketOption="ETK" PassportRequired="false" DateOfBirthRequired="false" PaxNameRequested="true" CntryResidenceRequired="false" NationalityRequired="false" PlaceOfBirthRequired="false" EmailRequired="true" TicketType="TicketAndReser">
+			<ProdMarketingName>
+				<![CDATA[<div id="DisplayName">Eurostar E-Ticket and Reservation Fully Flexible</div>]]>
+			</ProdMarketingName>
+			<PassengerTypePrices>
+				<PassengerMixSlice SliceID="1" Code="ADT" Quantity="1" UnitPrice="304.00" TSC="0.70" TotalSliceAmount="304.70" SFDetails="#{
+789C538ECE4FCA4A4D2E515488E60ACDCB2C71CE2F2EB152303634D733E002B1
+9D4B8B8A3C8BF39D53AC1494DC9D0294B8824B0B0A7232538B4092AE15C91941
+40E5067A960686C65CB1B100CD2C183E4E000000
+}">
+					<MixDetails>
+						<PassengerPlaceholder Age="-1"/>
+					</MixDetails>
+				</PassengerMixSlice>
+			</PassengerTypePrices>
+			<TotalPrice Fare="304.00" TSC="0.70" Amount="304.70" Commission="9.12" Net="295.58" ServiceFee="18.2879"/>
+			<OriginLocation LocationCode="7015400" Name="London St Pancras Int" Country="GB"/>
+			<DestinationLocation LocationCode="8700015" Name="Paris Nord" Country="FR"/>
+			<SubComponents/>
+			<IntegratedTotalPrice Fare="304.00" TSC="0.70" Amount="304.70" Commission="9.12" Net="295.58" ServiceFee="18.2879"/>
+			<IntegratedPassengerTypePrices>
+				<PassengerMixSlice SliceID="1" Code="ADT" Quantity="1" UnitPrice="304.00" TSC="0.70" TotalSliceAmount="304.70" SFDetails="#{
+789C538ECE4FCA4A4D2E515488E60ACDCB2C71CE2F2EB152303634D733E002B1
+9D4B8B8A3C8BF39D53AC1494DC9D0294B8824B0B0A7232538B4092AE15C91941
+40E5067A960686C65CB1B100CD2C183E4E000000
+}">
+					<MixDetails>
+						<PassengerPlaceholder Age="-1"/>
+					</MixDetails>
+				</PassengerMixSlice>
+			</IntegratedPassengerTypePrices>
+			<PossiblePlacePrefs>
+				<PossibleSpecialRequests>
+					<SpecialRequest>Unspecified</SpecialRequest>
+				</PossibleSpecialRequests>
+				<PossibleCompartmentTypes>
+					<CompartmentType>Unspecified</CompartmentType>
+				</PossibleCompartmentTypes>
+				<PossiblePositions>
+					<Position>Unspecified</Position>
+				</PossiblePositions>
+			</PossiblePlacePrefs>
+			<SalesConditions RefundPolicy="Fully refundable up to 60 days after departure.">
+				<TermsAndConditions MustAcknowledge="false" URL=""/>
+				<RefundRules>
+					<RefundRule Sequence="1" DateBasis="Issue" WithinDateBasis="-P5Y" PenaltyRate="0.0" MinimumPenalty="0.0"/>
+					<RefundRule Sequence="2" DateBasis="Issue" WithinDateBasis="P5Y" PenaltyRate="0.0" MinimumPenalty="0.0"/>
+				</RefundRules>
+			</SalesConditions>
+		</Fare>
+		<Fare FareReference="13" Class="Semi flex (BY) - Standard" IsEstimated="false" IsPreBookable="true" TicketingTimeLimit="2019-03-16T23:59:59.0Z" TicketCount="1" CurrencyCode="GBP" ItineraryType="One-Way-Outbound" IncludesProtectionPlan="false" ReservationRequired="true" ProductName="Eurostar E-TICKET AND RESERVATION SEMI FLEXIBLE" FareType="Regular" Magic="AFF45B0D044DBC84B1344ECBD979A096
+789C6D51CB6EDB3010BCEF57A8F159C2F22591BEF1210139344821F764E8205B
+44A040160D8B291204F9F7D26A51C445883DCDEECECC0E37FB7078F6C7F82DDB
+C3C59FA73C0CE11CC7302FDB6CDF413F0CFF21ED791A63FE78198F7E9B6D3E6D
+EF42ECA72FF0A6BF2484AB0261D7DA6D864505FA145EE6B8A215D8703A8DCB92
+14B6192978050FFEDA920565D0FACBAFC4D8787F5D44E83A78EC5F9D8FFD38DD
+CAB4539ABB778922110E69FC4EBBDD1DF44FAB9D39CCBE831F2FFD1CC7F8761D
+FA398FF1AFDB5B6FEB1D2BDB8DCBB6F9A39A5278DFBC432595154CD6B6E68DD5
+5C73476B410497B22E515B670DB515B1356D686D88A00C9970C8582D9032A21C
+70238DD4CC4AD330E504D39670C59D550EA94A4D49B94183BAA28C2621C35151
+5D136115519C700427B0ACB42AB194A52D8535C41044639821121D77B83EF8F8
+80EFE3EB3FEFFB9C74901FC392EE125808C80FFDF229A27C382CD39A0AB9099F
+155C7226AE1FB0D66F81869E0538020000
+" UseAfterTL="2019-03-20" UseByTL="2019-03-19" TravelDate="2019-03-20" PaxUnits="1" PricingOnRequest="false" BookingOnRequest="false" TicketOption="ETK" PassportRequired="false" DateOfBirthRequired="false" PaxNameRequested="true" CntryResidenceRequired="false" NationalityRequired="false" PlaceOfBirthRequired="false" EmailRequired="true" TicketType="TicketAndReser">
+			<ProdMarketingName>
+				<![CDATA[<div id="DisplayName">Eurostar E-Ticket and Reservation Semi Flexible</div>]]>
+			</ProdMarketingName>
+			<PassengerTypePrices>
+				<PassengerMixSlice SliceID="1" Code="ADT" Quantity="1" UnitPrice="49.00" TSC="0.70" TotalSliceAmount="49.70" SFDetails="#{
+789C538ECE4FCA4A4D2E515488E60ACDCB2C71CE2F2EB1523035D033E502319D
+4B8B8A3C8BF39D53AC1494DC9D0294B8824B0B0A7232538B4092AE15C9194140
+D5067A960686C65CB1B100BB3B180D4D000000
+}">
+					<MixDetails>
+						<PassengerPlaceholder Age="-1"/>
+					</MixDetails>
+				</PassengerMixSlice>
+			</PassengerTypePrices>
+			<TotalPrice Fare="49.00" TSC="0.70" Amount="49.70" Commission="1.47" Net="48.23" ServiceFee="3.48435"/>
+			<OriginLocation LocationCode="7015400" Name="London St Pancras Int" Country="GB"/>
+			<DestinationLocation LocationCode="8700015" Name="Paris Nord" Country="FR"/>
+			<SubComponents/>
+			<IntegratedTotalPrice Fare="49.00" TSC="0.70" Amount="49.70" Commission="1.47" Net="48.23" ServiceFee="3.48435"/>
+			<IntegratedPassengerTypePrices>
+				<PassengerMixSlice SliceID="1" Code="ADT" Quantity="1" UnitPrice="49.00" TSC="0.70" TotalSliceAmount="49.70" SFDetails="#{
+789C538ECE4FCA4A4D2E515488E60ACDCB2C71CE2F2EB1523035D033E502319D
+4B8B8A3C8BF39D53AC1494DC9D0294B8824B0B0A7232538B4092AE15C9194140
+D5067A960686C65CB1B100BB3B180D4D000000
+}">
+					<MixDetails>
+						<PassengerPlaceholder Age="-1"/>
+					</MixDetails>
+				</PassengerMixSlice>
+			</IntegratedPassengerTypePrices>
+			<PossiblePlacePrefs>
+				<PossibleSpecialRequests>
+					<SpecialRequest>Unspecified</SpecialRequest>
+				</PossibleSpecialRequests>
+				<PossibleCompartmentTypes>
+					<CompartmentType>Unspecified</CompartmentType>
+				</PossibleCompartmentTypes>
+				<PossiblePositions>
+					<Position>Unspecified</Position>
+				</PossiblePositions>
+			</PossiblePlacePrefs>
+			<SalesConditions RefundPolicy="Refundable up to 1 day before the departure date. A 40% cancellation fee applies. Non-refundable after departure. Refunds are limited to completely unused and unvalidated passes, tickets and exchange vouchers.">
+				<TermsAndConditions MustAcknowledge="false" URL=""/>
+				<RefundRules>
+					<RefundRule Sequence="1" DateBasis="Travel" WithinDateBasis="-P5Y" PenaltyRate="40.0" MinimumPenalty="0.0"/>
+					<RefundRule Sequence="2" DateBasis="Travel" WithinDateBasis="P0D" PenaltyRate="100.0" MinimumPenalty="0.0"/>
+				</RefundRules>
+			</SalesConditions>
+		</Fare>
+		<Fare FareReference="14" Class="Semi flex (HX) - Std Premier" IsEstimated="false" IsPreBookable="true" TicketingTimeLimit="2019-03-16T23:59:59.0Z" TicketCount="1" CurrencyCode="GBP" ItineraryType="One-Way-Outbound" IncludesProtectionPlan="false" ReservationRequired="true" ProductName="Eurostar E-TICKET AND RESERVATION SEMI FLEXIBLE" FareType="Regular" Magic="E6E09AD491AFB70D40ACF1E80C8D18B1
+789C6D51CB6EDB400CBCF32BD4F82C81FB92767DDB97801E5AA49073327490AD
+45A142960C6B53A408F2EF5DCB41110725781A92334372B39F0FBFC2317EC9F6
+7009E7319FFBF91C87795AB6D9BE85AEEF3F21CD791C62FE78198E619B6D3E4C
+EFE6D88DFFC1EBEE9210425981B06BEC36C3A2027D9A9FA778832BB0F3E9342C
+4BD2D866AC28157C0F6B0D0B24D084CBEF445A87701D45685B78EC5E5C88DD30
+DE2B3563EAFBEAD26462EC53FB8376BB07E87EAE8EA6790A2DFC78EEA638C43F
+D7A6A76988EF863FD95B7759E9EE8D36F54D379DE275F30A95545630E9ADE7B5
+D55C7347BD20824BE94BD4D659436D45ACA735F58608CA9071431D32E6055243
+40396EA4919A59696AA69C60DA12AEB8B3CA2155A928293768505794D1246538
+2AAA3D115611C509704C4C65A55589A52C6D29AC218620264D472467DCE31AF0
+F606DF86977FEEF73969213FCECBBA9A2C04E4876EF970A7BC3F2CE3ED34771F
+A80A22A912F81EE4FA8E35FF02514DA13A49020000
+" UseAfterTL="2019-03-20" UseByTL="2019-03-19" TravelDate="2019-03-20" PaxUnits="1" PricingOnRequest="false" BookingOnRequest="false" TicketOption="ETK" PassportRequired="false" DateOfBirthRequired="false" PaxNameRequested="true" CntryResidenceRequired="false" NationalityRequired="false" PlaceOfBirthRequired="false" EmailRequired="true" TicketType="TicketAndReser">
+			<ProdMarketingName>
+				<![CDATA[<div id="DisplayName">Eurostar E-Ticket and Reservation Semi Flexible</div>]]>
+			</ProdMarketingName>
+			<PassengerTypePrices>
+				<PassengerMixSlice SliceID="1" Code="ADT" Quantity="1" UnitPrice="123.00" TSC="0.70" TotalSliceAmount="123.70" SFDetails="#{
+789C538ECE4FCA4A4D2E515488E60ACDCB2C71CE2F2EB1523034B2D033E502B1
+9D4B8B8A3C8BF39D53AC1494DC9D0294B8824B0B0A7232538B4092AE15C91941
+40E5067A960686C65CB1B100CE2D18434E000000
+}">
+					<MixDetails>
+						<PassengerPlaceholder Age="-1"/>
+					</MixDetails>
+				</PassengerMixSlice>
+			</PassengerTypePrices>
+			<TotalPrice Fare="123.00" TSC="0.70" Amount="123.70" Commission="3.69" Net="120.01" ServiceFee="7.18295000000001"/>
+			<OriginLocation LocationCode="7015400" Name="London St Pancras Int" Country="GB"/>
+			<DestinationLocation LocationCode="8700015" Name="Paris Nord" Country="FR"/>
+			<SubComponents/>
+			<IntegratedTotalPrice Fare="123.00" TSC="0.70" Amount="123.70" Commission="3.69" Net="120.01" ServiceFee="7.18295000000001"/>
+			<IntegratedPassengerTypePrices>
+				<PassengerMixSlice SliceID="1" Code="ADT" Quantity="1" UnitPrice="123.00" TSC="0.70" TotalSliceAmount="123.70" SFDetails="#{
+789C538ECE4FCA4A4D2E515488E60ACDCB2C71CE2F2EB1523034B2D033E502B1
+9D4B8B8A3C8BF39D53AC1494DC9D0294B8824B0B0A7232538B4092AE15C91941
+40E5067A960686C65CB1B100CE2D18434E000000
+}">
+					<MixDetails>
+						<PassengerPlaceholder Age="-1"/>
+					</MixDetails>
+				</PassengerMixSlice>
+			</IntegratedPassengerTypePrices>
+			<PossiblePlacePrefs>
+				<PossibleSpecialRequests>
+					<SpecialRequest>Unspecified</SpecialRequest>
+				</PossibleSpecialRequests>
+				<PossibleCompartmentTypes>
+					<CompartmentType>Unspecified</CompartmentType>
+				</PossibleCompartmentTypes>
+				<PossiblePositions>
+					<Position>Unspecified</Position>
+				</PossiblePositions>
+			</PossiblePlacePrefs>
+			<SalesConditions RefundPolicy="Refundable up to 1 day before the departure date. A 40% cancellation fee applies. Non-refundable after departure. Refunds are limited to completely unused and unvalidated passes, tickets and exchange vouchers.">
+				<TermsAndConditions MustAcknowledge="false" URL=""/>
+				<RefundRules>
+					<RefundRule Sequence="1" DateBasis="Travel" WithinDateBasis="-P5Y" PenaltyRate="40.0" MinimumPenalty="0.0"/>
+					<RefundRule Sequence="2" DateBasis="Travel" WithinDateBasis="P0D" PenaltyRate="100.0" MinimumPenalty="0.0"/>
+				</RefundRules>
+			</SalesConditions>
+		</Fare>
+		<Fare FareReference="15" Class="Fully flex (AF) - Business Premier" IsEstimated="false" IsPreBookable="true" TicketingTimeLimit="2019-03-16T23:59:59.0Z" TicketCount="1" CurrencyCode="GBP" ItineraryType="One-Way-Outbound" IncludesProtectionPlan="false" ReservationRequired="true" ProductName="Eurostar E-TICKET AND RESERVATION FULLY FLEXIBLE" FareType="Regular" Magic="568583192C8A58A4191B75E69F2DCCF2
+789C6D514D4FEB3010BCFB57E4D173227FC6766EFE8AC4812750CAA9CA216D2C
+1494C655631008F1DF9F13D0538BB07C9A9DDD99D9DDECC2FED91FE29F6C07CE
+FE34E6A10FA7388469AEB25D0BBABEFF8134A77188F9FD7938F82ADB5C746F43
+ECC65FF0BA3B2784405A40B06D4C95C18203750C2F53FC823930E1781CE63969
+54992C10067F7DAA61C90A2640E3CFAF6968EDFDD20A41DB82FBEECDFAD80DE3
+B5523326DEADAD329426F6897EA3ECF606744FABA3294CBE050F2FDD1487F8BE
+901EA7217E1BFE616FCDB28EBB36DAD45FBA69151F9B0FC085348C08671CAD8D
+A28A5AEC18625408574265ACD1D870641CAEB1D38861024949A8E5843808B146
+405AAA85168A18A16B222D23CA202AA935D2422C535160AAA1868A63829394A6
+5062E5103312498A00858EC1922B59C25294A66446238D2034161B2488A34968
+79E0F313DC0D6FFFDDEF72D482FC10E6251AE2297BBEEFE68B3DE5FD7E1ED7D5
+A0AB0B205160C1E57285F5FF03D4609FA440020000
+" UseAfterTL="2019-03-20" UseByTL="2019-03-19" TravelDate="2019-03-20" PaxUnits="1" PricingOnRequest="false" BookingOnRequest="false" TicketOption="ETK" PassportRequired="false" DateOfBirthRequired="false" PaxNameRequested="true" CntryResidenceRequired="false" NationalityRequired="false" PlaceOfBirthRequired="false" EmailRequired="true" TicketType="TicketAndReser">
+			<ProdMarketingName>
+				<![CDATA[<div id="DisplayName">Eurostar E-Ticket and Reservation Fully Flexible</div>]]>
+			</ProdMarketingName>
+			<PassengerTypePrices>
+				<PassengerMixSlice SliceID="1" Code="ADT" Quantity="1" UnitPrice="304.00" TSC="0.70" TotalSliceAmount="304.70" SFDetails="#{
+789C538ECE4FCA4A4D2E515488E60ACDCB2C71CE2F2EB152303634D733E002B1
+9D4B8B8A3C8BF39D53AC1494DC9D0294B8824B0B0A7232538B4092AE15C91941
+40E5067A960686C65CB1B100CD2C183E4E000000
+}">
+					<MixDetails>
+						<PassengerPlaceholder Age="-1"/>
+					</MixDetails>
+				</PassengerMixSlice>
+			</PassengerTypePrices>
+			<TotalPrice Fare="304.00" TSC="0.70" Amount="304.70" Commission="9.12" Net="295.58" ServiceFee="18.2879"/>
+			<OriginLocation LocationCode="7015400" Name="London St Pancras Int" Country="GB"/>
+			<DestinationLocation LocationCode="8700015" Name="Paris Nord" Country="FR"/>
+			<SubComponents/>
+			<IntegratedTotalPrice Fare="304.00" TSC="0.70" Amount="304.70" Commission="9.12" Net="295.58" ServiceFee="18.2879"/>
+			<IntegratedPassengerTypePrices>
+				<PassengerMixSlice SliceID="1" Code="ADT" Quantity="1" UnitPrice="304.00" TSC="0.70" TotalSliceAmount="304.70" SFDetails="#{
+789C538ECE4FCA4A4D2E515488E60ACDCB2C71CE2F2EB152303634D733E002B1
+9D4B8B8A3C8BF39D53AC1494DC9D0294B8824B0B0A7232538B4092AE15C91941
+40E5067A960686C65CB1B100CD2C183E4E000000
+}">
+					<MixDetails>
+						<PassengerPlaceholder Age="-1"/>
+					</MixDetails>
+				</PassengerMixSlice>
+			</IntegratedPassengerTypePrices>
+			<PossiblePlacePrefs>
+				<PossibleSpecialRequests>
+					<SpecialRequest>Unspecified</SpecialRequest>
+				</PossibleSpecialRequests>
+				<PossibleCompartmentTypes>
+					<CompartmentType>Unspecified</CompartmentType>
+				</PossibleCompartmentTypes>
+				<PossiblePositions>
+					<Position>Unspecified</Position>
+				</PossiblePositions>
+			</PossiblePlacePrefs>
+			<SalesConditions RefundPolicy="Fully refundable up to 60 days after departure.">
+				<TermsAndConditions MustAcknowledge="false" URL=""/>
+				<RefundRules>
+					<RefundRule Sequence="1" DateBasis="Issue" WithinDateBasis="-P5Y" PenaltyRate="0.0" MinimumPenalty="0.0"/>
+					<RefundRule Sequence="2" DateBasis="Issue" WithinDateBasis="P5Y" PenaltyRate="0.0" MinimumPenalty="0.0"/>
+				</RefundRules>
+			</SalesConditions>
+		</Fare>
+	</Fares>
+	<CountryLists/>
+</ACP_RailAvailRS>
